@@ -1,0 +1,44 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: "{{.Release.Name}}"
+  labels:
+    app: "{{.Release.Name}}"
+spec:
+  selector:
+    matchLabels:
+      app: "{{.Release.Name}}"
+  schedule: {{ .Values.job.schedule }}
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: "{{.Release.Name}}"
+        spec:
+          containers:
+            - name: "{{.Release.Name}}"
+              image: {{ .Values.job.image }}
+              volumeMounts:
+                - name: config-vol
+                  mountPath: /gickup/conf.yml
+                  subPath: conf.yml
+                - name: github-token-vol
+                  mountPath: /gickup/secret/
+                  readOnly: true
+                - name: github-backup-vol
+                  mountPath: /github
+          restartPolicy: "Never"
+          volumes:
+            - name: config-vol
+              configMap:
+                name: "{{.Release.Name}}-config"
+            - name: github-token-vol
+              secret:
+                secretName: github-token
+                items:
+                  - key: password
+                    path: github-token.txt
+            - name: github-backup-vol
+              persistentVolumeClaim:
+                claimName: github-backup-pvc
