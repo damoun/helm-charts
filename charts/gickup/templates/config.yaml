@@ -1,17 +1,11 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: "{{.Release.Name}}-config"
-
+  name: "{{ .Release.Name }}-conf"
+  namespace: {{ .Release.Namespace }}
+  labels: {{- include "base.labels.standard" . | nindent 4 }}
 data:
   conf.yml: |
-    source:
-      github:
-        - token_file: /gickup/secret/github-token.txt
-          username: {{ .Values.config.github.username }}
-    destination:
-      local:
-        - path: /github
-          bare: true
-          zip: true
-          structured: true
+  {{- with .Values.config }}
+    {{- tpl (toYaml .) $ | nindent 2 }}
+  {{- end }}

@@ -1,44 +1,41 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: "{{.Release.Name}}"
-  labels:
-    app: "{{.Release.Name}}"
+  name: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace }}
+  labels: {{- include "base.labels.standard" . | nindent 4 }}
 spec:
-  selector:
-    matchLabels:
-      app: "{{.Release.Name}}"
-  schedule: {{ .Values.job.schedule }}
+  concurrencyPolicy: Forbid
+  schedule: {{ .Values.schedule }}
   jobTemplate:
     spec:
       template:
         metadata:
-          labels:
-            app: "{{.Release.Name}}"
+         labels: {{- include "base.labels.standard" . | nindent 12 }}
         spec:
+          restartPolicy: OnFailure
           containers:
-            - name: "{{.Release.Name}}"
-              image: {{ .Values.job.image }}
+            - name: gickup
+              image: {{ .Values.image }}
               volumeMounts:
-                - name: config-vol
-                  mountPath: /gickup/conf.yml
-                  subPath: conf.yml
-                - name: github-token-vol
-                  mountPath: /gickup/secret/
+                - name: gickup-config
+                  mountPath: /gickup
+                - name: gickup-data
+                  mountPath: /data
+                - name: secret-volume
+                  mountPath: /secret/
                   readOnly: true
-                - name: github-backup-vol
-                  mountPath: /github
-          restartPolicy: "Never"
           volumes:
-            - name: config-vol
+            - name: gickup-config
               configMap:
-                name: "{{.Release.Name}}-config"
-            - name: github-token-vol
-              secret:
-                secretName: github-token
-                items:
-                  - key: password
-                    path: github-token.txt
-            - name: github-backup-vol
+                name: "{{ .Release.Name }}-conf"
+            - name: gickup-data
+            {{- if .Values.persistence.enabled }}
               persistentVolumeClaim:
-                claimName: github-backup-pvc
+                claimName: {{ .Release.Name }}
+            {{- else }}
+              emptyDir: {}
+            {{ end }}
+            - name: gickup-secret
+              secret:
+                secretName: {{ .Values.secretName }}
