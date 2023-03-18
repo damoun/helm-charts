@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: home-assistant-config
+
+data:
+{{- with .Values.configmap.config.data }}
+  {{- tpl (toYaml .) $ | nindent 2 }}
+{{- end }}
