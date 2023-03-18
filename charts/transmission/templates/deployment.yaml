@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: transmission
+  labels:
+    app: transmission
+spec:
+  replicas: {{ .Values.deployment.replicas }}
+  selector:
+    matchLabels:
+      app: transmission
+  template:
+    metadata:
+      labels:
+        app: transmission
+    spec:
+      containers:
+        - name: transmission
+          image: {{ .Values.deployment.image }}
+          volumeMounts:
+            - name: transmission-dl-vol
+              mountPath: /downloads
+            - name: transmission-cf-vol
+              mountPath: /config
+          securityContext:
+            allowPrivilegeEscalation: false
+          resources:
+            limits:
+              cpu: "1"
+              memory: "500Mi"
+            requests:
+              cpu: "0.5"
+              memory: "200Mi"
+          ports:
+            - name: http
+              containerPort: 9091
+              protocol: TCP
+            - name: peer-tcp
+              containerPort: 51413
+              protocol: TCP
+            - name: peer-udp
+              containerPort: 51413
+              protocol: UDP
+          livenessProbe:
+            httpGet:
+              path: /transmission/web/
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /transmission/web/
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 10
+      volumes:
+        - name: transmission-dl-vol
+          persistentVolumeClaim:
+            claimName: transmission-dl-pvc
+        - name: transmission-cf-vol
+          persistentVolumeClaim:
+            claimName: transmission-cf-pvc

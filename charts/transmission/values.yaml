@@ -1,0 +1,6 @@
+deployment:
+  image: "lscr.io/linuxserver/transmission:version-4.0.2"
+  replicas: 1
+
+ingress:
+  host: transmission.local
