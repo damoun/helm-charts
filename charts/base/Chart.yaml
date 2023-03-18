@@ -1,0 +1,7 @@
+apiVersion: v2
+appVersion: 1.0.0
+description: A Library Helm Chart for grouping base logic charts.
+home: https://github.com/damoun/helm-charts/tree/main/charts/base
+name: base
+type: library
+version: 1.0.0
