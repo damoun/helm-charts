@@ -5,4 +5,4 @@ metadata:
   namespace: {{ .Release.Namespace | quote }}
   labels: {{- include "base.labels.standard" . | nindent 4 }}
 data:
-  settings.json: {{ toJson .Values.config }}
+  settings.json: {{ toJson default {} .Values.config }}

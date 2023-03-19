@@ -1,6 +1,8 @@
 image: "lscr.io/linuxserver/transmission:version-4.0.2"
 replicaCount: 1
 
+config: {}
+
 ingress:
   enabled: true
   hostname: transmission.local
