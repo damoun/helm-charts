@@ -144,6 +144,22 @@ entries:
   transmission:
   - apiVersion: v2
     appVersion: 4.0.2
+    created: "2023-03-19T22:38:45.128870957Z"
+    dependencies:
+    - name: base
+      repository: https://damoun.github.io/helm-charts
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Transmission bittorrent client Helm Chart
+    digest: b6d22d1f5a084fe26a1d2bd4fdebaa7c314751c408389442552cde179ad470e7
+    name: transmission
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/transmission-1.0.2/transmission-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 4.0.2
     created: "2023-03-19T22:27:08.058919816Z"
     dependencies:
     - name: base
@@ -168,4 +184,4 @@ entries:
     urls:
     - https://github.com/damoun/helm-charts/releases/download/transmission-0.1.0/transmission-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-19T22:27:08.058937217Z"
+generated: "2023-03-19T22:38:45.128992957Z"
