@@ -2,7 +2,7 @@ apiVersion: v2
 name: gickup
 description: Gickup cron job Helm Chart
 type: application
-version: 1.0.2
+version: 1.0.3
 appVersion: "0.10.14"
 dependencies:
   - name: base

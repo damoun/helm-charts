@@ -22,9 +22,11 @@ spec:
                   mountPath: /gickup
                 - name: gickup-data
                   mountPath: /data
-                - name: secret-volume
+                {{- if .Values.secret.enabled }}
+                - name: gickup-secret
                   mountPath: /secret/
                   readOnly: true
+                {{ end }}
           volumes:
             - name: gickup-config
               configMap:
@@ -36,6 +38,8 @@ spec:
             {{- else }}
               emptyDir: {}
             {{ end }}
+            {{- if .Values.secret.enabled }}
             - name: gickup-secret
               secret:
-                secretName: {{ .Values.secretName }}
+                secretName: {{ .Values.secret.name }}
+            {{ end }}
