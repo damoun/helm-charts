@@ -21,8 +21,11 @@ spec:
           volumeMounts:
             - name: transmission-downloads
               mountPath: /downloads
+            {{- if .Values.config }}
             - name: transmission-config
               mountPath: /config
+              subPath: settings.json
+            {{- end }}
           {{- if .Values.resources }}
           resources: {{- toYaml .Values.resources | nindent 12 }}
           {{- end }}
@@ -66,6 +69,8 @@ spec:
         {{- else }}
           emptyDir: {}
         {{ end }}
+        {{- if .Values.config }}
         - name: transmission-config
           configMap:
               name: "{{ .Release.Name }}-conf"
+        {{- end }}
