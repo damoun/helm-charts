@@ -1,3 +1,4 @@
+{{- if .Values.config }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -5,4 +6,5 @@ metadata:
   namespace: {{ .Release.Namespace | quote }}
   labels: {{- include "base.labels.standard" . | nindent 4 }}
 data:
-  settings.json: {{ toJson default {} .Values.config }}
+  settings.json: {{ toJson .Values.config }}
+{{- end -}}
