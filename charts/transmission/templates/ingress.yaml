@@ -22,7 +22,7 @@ spec:
               service:
                 name: {{ .Release.Name }}
                 port:
-                  {- if typeIs "string" .Values.ingress.backend.servicePort }}
+                  {{- if typeIs "string" .Values.ingress.backend.servicePort }}
                   name: {{ .Values.ingress.backend.servicePort }}
                   {{- else if or (typeIs "int" .Values.ingress.backend.servicePort) (typeIs "float64" .Values.ingress.backend.servicePort) }}
                   number: {{ .Values.ingress.backend.servicePort | int }}
