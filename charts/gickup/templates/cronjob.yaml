@@ -17,9 +17,11 @@ spec:
           containers:
             - name: gickup
               image: {{ .Values.image }}
+              command:
+                - /config/conf.yml
               volumeMounts:
                 - name: gickup-config
-                  mountPath: /gickup
+                  mountPath: /config
                 - name: gickup-data
                   mountPath: /data
                 {{- if .Values.secret.enabled }}
