@@ -5,4 +5,4 @@ metadata:
   namespace: {{ .Release.Namespace }}
   labels: {{- include "base.labels.standard" . | nindent 4 }}
 data:
-  conf.yml: {{- .Values.config | nindent 4 }}
+  conf.yml: {{- toYaml .Values.config | nindent 4 }}
