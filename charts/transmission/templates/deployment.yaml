@@ -65,7 +65,7 @@ spec:
             claimName: {{ .Release.Name }}
         {{- else }}
           emptyDir: {}
-          {{ end }}
+        {{ end }}
         - name: transmission-config
           configMap:
               name: "{{ .Release.Name }}-conf"
