@@ -13,7 +13,7 @@ spec:
   {{- end }}
   template:
     metadata:
-      labels: {{- include "base.labels.standard" . | nindent 4 }}
+      labels: {{- include "base.labels.standard" . | nindent 8 }}
     spec:
       containers:
         - name: transmission
