@@ -23,7 +23,7 @@ spec:
               mountPath: /downloads
             {{- if .Values.config }}
             - name: transmission-config
-              mountPath: /config
+              mountPath: /config/settings.json
               subPath: settings.json
             {{- end }}
           {{- if .Values.resources }}

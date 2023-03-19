@@ -2,7 +2,7 @@ apiVersion: v2
 name: transmission
 description: Transmission bittorrent client Helm Chart
 type: application
-version: 1.0.5
+version: 1.0.6
 appVersion: "4.0.2"
 dependencies:
   - name: base
