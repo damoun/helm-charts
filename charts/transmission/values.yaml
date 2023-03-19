@@ -1,6 +1,43 @@
-deployment:
-  image: "lscr.io/linuxserver/transmission:version-4.0.2"
-  replicas: 1
+image: "lscr.io/linuxserver/transmission:version-4.0.2"
+replicaCount: 1
 
 ingress:
-  host: transmission.local
+  enabled: true
+  hostname: transmission.local
+  path: /
+  pathType: Prefix
+  backend:
+    servicePort: http
+
+containerPorts:
+  http: 9091
+  peer: 51413
+
+service:
+  type: ClusterIP
+  ports:
+    http: 9091
+    peer: 51413
+
+livenessProbe:
+  enabled: true
+  path: /transmission/web/
+  port: http
+  initialDelaySeconds: 180
+  periodSeconds: 20
+  timeoutSeconds: 5
+  failureThreshold: 6
+  successThreshold: 1
+
+readinessProbe:
+  enabled: true
+  path: /transmission/web/
+  port: http
+  initialDelaySeconds: 180
+  periodSeconds: 20
+  timeoutSeconds: 5
+  failureThreshold: 6
+  successThreshold: 1
+
+persistence:
+  enabled: false
