@@ -144,6 +144,22 @@ entries:
   proxmox-exporter:
   - apiVersion: v2
     appVersion: 2.2.4
+    created: "2023-03-26T13:17:50.414401621Z"
+    dependencies:
+    - name: base
+      repository: https://damoun.github.io/helm-charts
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Prometheus Proxmox exporter Helm Chart
+    digest: a4aba65638f2d2b65bedff5af4fffcf2186abc3c76d0af736f4eaf799b2ceb9d
+    name: proxmox-exporter
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.2.1/proxmox-exporter-1.2.1.tgz
+    version: 1.2.1
+  - apiVersion: v2
+    appVersion: 2.2.4
     created: "2023-03-26T13:12:16.323674551Z"
     dependencies:
     - name: base
@@ -297,4 +313,4 @@ entries:
     urls:
     - https://github.com/damoun/helm-charts/releases/download/transmission-0.1.0/transmission-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-26T13:12:16.323707651Z"
+generated: "2023-03-26T13:17:50.414532228Z"
