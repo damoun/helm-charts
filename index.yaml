@@ -141,6 +141,23 @@ entries:
     urls:
     - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.1.0/home-assistant-0.1.0.tgz
     version: 0.1.0
+  proxmox-exporter:
+  - apiVersion: v2
+    appVersion: 2.2.4
+    created: "2023-03-26T11:35:15.006447928Z"
+    dependencies:
+    - name: base
+      repository: https://damoun.github.io/helm-charts
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Prometheus Proxmox exporter Helm Chart
+    digest: be53ca6627f4cb6298829d4fd0f95c5cc8595b3fd0761749463f692a6a4479ad
+    name: proxmox-exporter
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.0.0/proxmox-exporter-1.0.0.tgz
+    version: 1.0.0
   transmission:
   - apiVersion: v2
     appVersion: 4.0.2
@@ -248,4 +265,4 @@ entries:
     urls:
     - https://github.com/damoun/helm-charts/releases/download/transmission-0.1.0/transmission-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-19T23:32:07.313612988Z"
+generated: "2023-03-26T11:35:15.006556929Z"
