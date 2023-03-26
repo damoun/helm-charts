@@ -1,0 +1,40 @@
+image: "prompve/prometheus-pve-exporter:2.2.4"
+replicaCount: 1
+
+ingress:
+  enabled: true
+  hostname: proxmox-exporter.local
+  path: /
+  pathType: Prefix
+  backend:
+    servicePort: http
+
+containerPorts:
+  http: 9221
+
+service:
+  type: ClusterIP
+  ports:
+    http: 9221
+
+livenessProbe:
+  enabled: true
+  path: /
+  port: http
+  initialDelaySeconds: 180
+  periodSeconds: 20
+  timeoutSeconds: 5
+  failureThreshold: 6
+  successThreshold: 1
+
+readinessProbe:
+  enabled: true
+  path: /
+  port: http
+  initialDelaySeconds: 180
+  periodSeconds: 20
+  timeoutSeconds: 5
+  failureThreshold: 6
+  successThreshold: 1
+
+env: []

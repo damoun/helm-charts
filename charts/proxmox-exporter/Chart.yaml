@@ -1,0 +1,12 @@
+apiVersion: v2
+name: proxmox-exporter
+description: Prometheus Proxmox exporter Helm Chart
+type: application
+version: 1.0.0
+appVersion: "2.2.4"
+dependencies:
+  - name: base
+    repository: https://damoun.github.io/helm-charts
+    tags:
+      - damoun-base
+    version: 1.x.x

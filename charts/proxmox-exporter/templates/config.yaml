@@ -1,0 +1,10 @@
+{{- if .Values.config }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: "{{ .Release.Name }}-conf"
+  namespace: {{ .Release.Namespace | quote }}
+  labels: {{- include "base.labels.standard" . | nindent 4 }}
+data:
+  pve.yml: {{- toYaml .Values.config  | nindent 2 }}
+{{- end -}}
