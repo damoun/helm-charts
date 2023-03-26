@@ -5,10 +5,9 @@ metadata:
   namespace: {{ .Release.Namespace | quote }}
   labels: {{- include "base.labels.standard" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}
-  annotations:
-    {{- range $key, $value := . }}
-    {{ $key }}: {{ tpl $value $ | quote }}
-    {{- end }}
+  {{- if .Values.annotations }}
+  annotations: {{ toYaml .Values.annotations | indent 4 }}
+  {{- end }}
 spec:
   selector:
     matchLabels: {{- include "base.labels.matchLabels" . | nindent 6 }}
