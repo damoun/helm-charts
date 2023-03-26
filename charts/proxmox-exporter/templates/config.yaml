@@ -9,7 +9,6 @@ metadata:
     {{- range $key, $value := . }}
     {{ $key }}: {{ tpl $value $ | quote }}
     {{- end }}
-  {{- end }}
 data:
   pve.yml: {{- toYaml .Values.config  | nindent 4 }}
 {{- end -}}

@@ -9,7 +9,6 @@ metadata:
     {{- range $key, $value := . }}
     {{ $key }}: {{ tpl $value $ | quote }}
     {{- end }}
-  {{- end }}
 spec:
   selector:
     matchLabels: {{- include "base.labels.matchLabels" . | nindent 6 }}
