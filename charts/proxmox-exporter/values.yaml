@@ -12,6 +12,8 @@ ingress:
 containerPorts:
   http: 9221
 
+annotations: {}
+
 service:
   type: ClusterIP
   ports:

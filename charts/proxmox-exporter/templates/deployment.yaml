@@ -4,6 +4,12 @@ metadata:
   name: {{ .Release.Name }}
   namespace: {{ .Release.Namespace | quote }}
   labels: {{- include "base.labels.standard" . | nindent 4 }}
+  {{- with .Values.ingress.annotations }}
+  annotations:
+    {{- range $key, $value := . }}
+    {{ $key }}: {{ tpl $value $ | quote }}
+    {{- end }}
+  {{- end }}
 spec:
   selector:
     matchLabels: {{- include "base.labels.matchLabels" . | nindent 6 }}
