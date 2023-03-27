@@ -5,6 +5,10 @@ metadata:
   name: {{ .Release.Name }}
   namespace: {{ .Release.Namespace }}
   labels: {{- include "base.labels.standard" . | nindent 4 }}
+  {{- with .Values.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
 spec:
   storageClassName: {{ .Values.persistence.storageClassName }}
   accessModes:
