@@ -1,5 +1,6 @@
-{{- if $.Values.serviceMonitor }}
-{{- if and ( .Capabilities.APIVersions.Has "monitoring.coreos.com/v1" ) ( .Values.serviceMonitor.enabled ) }}
+{{- if $.Values.serviceMonitor.enabled }}
+{{- range $.Values.serviceMonitor.targets }}
+---
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
@@ -14,34 +15,38 @@ metadata:
   {{- end }}
 spec:
   endpoints:
-  - targetPort: {{ .Values.service.ports.http }}
-{{- if .Values.serviceMonitor.interval }}
-    interval: {{ .Values.serviceMonitor.interval }}
-{{- end }}
-{{- if .Values.serviceMonitor.path }}
-    path: {{ .Values.serviceMonitor.path }}
-{{- end }}
-{{- if .Values.serviceMonitor.module }}
+  - port: http
+    interval: {{ $.Values.serviceMonitor.interval }}
+    scrapeTimeout: {{ $.Values.serviceMonitor.scrapeTimeout }}
+    scheme: http
+    path: /pve
     params:
-      module:
-        - {{ .Values.serviceMonitor.module }}
-{{- end }}
-{{- if .Values.serviceMonitor.timeout }}
-    scrapeTimeout: {{ .Values.serviceMonitor.timeout }}
-{{- end }}
-{{- if .Values.serviceMonitor.metricRelabelings }}
+      module: [{{ $.Values.serviceMonitor.module }}]
+      target: [{{ .url }}]
     metricRelabelings:
-{{ toYaml .Values.serviceMonitor.metricRelabelings | indent 4 }}
+      - sourceLabels: [instance]
+        targetLabel: instance
+        replacement: {{ .url }}
+      - sourceLabels: [target]
+        targetLabel: target
+        replacement: {{ .name }}
+      {{- range $targetLabel, $replacement := .additionalMetricsRelabels | default dict }}
+      - targetLabel: {{ $targetLabel | quote }}
+        replacement: {{ $replacement | quote }}
+      {{- end }}
+{{- if $.Values.serviceMonitor.metricRelabelings }}
+    metricRelabelings:
+{{ toYaml $.Values.serviceMonitor.metricRelabelings | indent 4 }}
 {{- end }}
-  jobLabel: {{ template "prometheus-consul-exporter.fullname" . }}
+  jobLabel: {{ $.Release.Name }}
   namespaceSelector:
     matchNames:
-      - {{ .Release.Namespace }}
+      - {{ $.Release.Namespace | quote }}
   selector:
-    matchLabels: {{- include "base.labels.standard" . | nindent 6 }}
-{{- if .Values.serviceMonitor.targetLabels }}
+    matchLabels: {{- include "base.labels.matchLabels" $ | nindent 6 }}
+{{- if $.Values.serviceMonitor.targetLabels }}
   targetLabels:
-{{- range .Values.serviceMonitor.targetLabels }}
+{{- range $.Values.serviceMonitor.targetLabels }}
     - {{ . }}
 {{- end }}
 {{- end }}
