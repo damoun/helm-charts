@@ -3,11 +3,14 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: {{ .Release.Name }}
-  namespace: {{ .Release.Namespace | quote }}
-  labels: {{- include "base.labels.standard" . | nindent 4 }}
-  {{- if .Values.annotations }}
-  annotations: {{ toYaml .Values.annotations | indent 4 }}
+  name: {{ $.Release.Name }}
+  namespace: {{ $.Release.Namespace | quote }}
+  labels:
+    {{- include "base.labels.standard" $ | nindent 4 }}
+    {{- toYaml $.Values.serviceMonitor.extraLabels | nindent 4 }}
+  {{- with $.Values.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
   {{- end }}
 spec:
   endpoints:
