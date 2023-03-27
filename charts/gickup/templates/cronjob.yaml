@@ -15,7 +15,11 @@ spec:
     spec:
       template:
         metadata:
-         labels: {{- include "base.labels.standard" . | nindent 12 }}
+          labels: {{- include "base.labels.standard" . | nindent 12 }}
+          {{- with .Values.annotations }}
+          annotations:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
         spec:
           restartPolicy: OnFailure
           containers:
