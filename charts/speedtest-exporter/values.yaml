@@ -1,0 +1,47 @@
+image: "ghcr.io/danopstech/speedtest_exporter:v0.0.5"
+replicaCount: 1
+
+ingress:
+  enabled: false
+  hostname: speedtest-exporter.local
+  path: /
+  pathType: Prefix
+  backend:
+    servicePort: http
+
+containerPorts:
+  http: 9090
+
+annotations: {}
+
+service:
+  type: ClusterIP
+  ports:
+    http: 9090
+
+livenessProbe:
+  enabled: true
+  path: /health
+  port: http
+  initialDelaySeconds: 30
+  periodSeconds: 20
+  timeoutSeconds: 5
+  failureThreshold: 6
+  successThreshold: 1
+
+readinessProbe:
+  enabled: true
+  path: /health
+  port: http
+  initialDelaySeconds: 30
+  periodSeconds: 20
+  timeoutSeconds: 5
+  failureThreshold: 6
+  successThreshold: 1
+
+serviceMonitor:
+  enabled: false
+  extraLabels:
+    release: prometheus
+  interval: 60m
+  scrapeTimeout: 60s

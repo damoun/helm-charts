@@ -25,4 +25,5 @@
 * `charts/transmission`: Chart for Transmission bittorrent client.
 * `charts/home-assistamt`: Chart for [Home Assistant](https://www.home-assistant.io).
 * `charts/gickup`: Chart for [Gickup](https://github.com/cooperspencer/gickup) command line.
-* `charts/proxmox-exporter`: Chart for [Proxmox exporter](https://github.com/prometheus-pve/prometheus-pve-exporter) command line.
+* `charts/proxmox-exporter`: Chart for Prometheus [Proxmox exporter](https://github.com/prometheus-pve/prometheus-pve-exporter).
+* `charts/speedtest-exporter`: Chart for Prometheus [Speedtest exporter](https://github.com/danopstech/speedtest_exporter).
