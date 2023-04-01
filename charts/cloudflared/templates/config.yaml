@@ -1,0 +1,14 @@
+{{- if .Values.config }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: "{{ .Release.Name }}-conf"
+  namespace: {{ .Release.Namespace | quote }}
+  labels: {{- include "base.labels.standard" . | nindent 4 }}
+  {{- with .Values.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+data:
+  config.yaml: {{- toYaml .Values.config  | nindent 4 }}
+{{- end -}}
