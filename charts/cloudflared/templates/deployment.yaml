@@ -59,10 +59,16 @@ spec:
             - name: creds
               mountPath: /etc/cloudflared/creds
               readOnly: true
+            - name: certs
+              mountPath: /etc/cloudflared/certs
+              readOnly: true
       volumes:
         - name: creds
           secret:
-            secretName: {{ .Values.secret.name }}
+            secretName: {{ .Values.secret.credentials.name }}
+        - name: certs
+          secret:
+            secretName: {{ .Values.secret.certificates.name }}
         - name: config
           configMap:
             name: "{{ .Release.Name }}-conf"
