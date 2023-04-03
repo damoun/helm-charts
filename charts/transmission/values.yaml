@@ -22,7 +22,7 @@ service:
 livenessProbe:
   enabled: true
   path: /transmission/web/
-  port: http
+  port: 9091
   initialDelaySeconds: 180
   periodSeconds: 20
   timeoutSeconds: 5
@@ -32,7 +32,7 @@ livenessProbe:
 readinessProbe:
   enabled: true
   path: /transmission/web/
-  port: http
+  port: 9091
   initialDelaySeconds: 180
   periodSeconds: 20
   timeoutSeconds: 5
