@@ -258,6 +258,22 @@ entries:
   speedtest-exporter:
   - apiVersion: v2
     appVersion: 0.0.5
+    created: "2023-04-03T22:39:20.545498608Z"
+    dependencies:
+    - name: base
+      repository: https://damoun.github.io/helm-charts
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Prometheus Speedtest exporter Helm Chart
+    digest: 955b48f283e4a38143380ea16120864b8713fe1aef5af836418b3ad6c653c254
+    name: speedtest-exporter
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.1/speedtest-exporter-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 0.0.5
     created: "2023-03-28T20:43:38.394310151Z"
     dependencies:
     - name: base
@@ -347,4 +363,4 @@ entries:
     urls:
     - https://github.com/damoun/helm-charts/releases/download/transmission-0.1.0/transmission-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-03T21:42:14.933510579Z"
+generated: "2023-04-03T22:39:20.545551809Z"
