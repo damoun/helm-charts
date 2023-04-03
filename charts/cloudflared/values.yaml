@@ -23,7 +23,7 @@ secret:
 livenessProbe:
   enabled: true
   path: /livez
-  port: http
+  port: 2000
   initialDelaySeconds: 10
   periodSeconds: 10
   timeoutSeconds: 5
@@ -33,7 +33,7 @@ livenessProbe:
 readinessProbe:
   enabled: true
   path: /readyz
-  port: http
+  port: 2000
   initialDelaySeconds: 10
   periodSeconds: 10
   timeoutSeconds: 5
