@@ -22,7 +22,7 @@ secret:
 
 livenessProbe:
   enabled: true
-  path: /ready
+  path: /livez
   port: http
   initialDelaySeconds: 10
   periodSeconds: 10
@@ -32,7 +32,7 @@ livenessProbe:
 
 readinessProbe:
   enabled: true
-  path: /ready
+  path: /readyz
   port: http
   initialDelaySeconds: 10
   periodSeconds: 10
