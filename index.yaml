@@ -193,6 +193,22 @@ entries:
   proxmox-exporter:
   - apiVersion: v2
     appVersion: 2.2.4
+    created: "2023-04-08T19:22:36.050070037Z"
+    dependencies:
+    - name: base
+      repository: https://damoun.github.io/helm-charts
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Prometheus Proxmox exporter Helm Chart
+    digest: 7afe0a59220574a12f86909f4211337cc429b7f752527b63e1178ad54baa4941
+    name: proxmox-exporter
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.3.3/proxmox-exporter-1.3.3.tgz
+    version: 1.3.3
+  - apiVersion: v2
+    appVersion: 2.2.4
     created: "2023-04-04T15:30:52.998293453Z"
     dependencies:
     - name: base
@@ -304,6 +320,22 @@ entries:
     - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.0.0/proxmox-exporter-1.0.0.tgz
     version: 1.0.0
   speedtest-exporter:
+  - apiVersion: v2
+    appVersion: 0.0.5
+    created: "2023-04-08T19:22:36.1748448Z"
+    dependencies:
+    - name: base
+      repository: https://damoun.github.io/helm-charts
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Prometheus Speedtest exporter Helm Chart
+    digest: 8310139431aca5882d11ddf9efeb3450090ad6f0ec0a9c174a1af45f8b1282ba
+    name: speedtest-exporter
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.3/speedtest-exporter-1.0.3.tgz
+    version: 1.0.3
   - apiVersion: v2
     appVersion: 0.0.5
     created: "2023-04-04T15:30:53.14168255Z"
@@ -443,4 +475,4 @@ entries:
     urls:
     - https://github.com/damoun/helm-charts/releases/download/transmission-0.1.0/transmission-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-04T16:07:55.818215801Z"
+generated: "2023-04-08T19:22:36.174917402Z"
