@@ -41,7 +41,7 @@ readinessProbe:
 
 serviceMonitor:
   enabled: false
-  extraLabels:
-    release: prometheus
+  extraLabels: {}
+#   release: kube-prometheus-stack
   interval: 60m
   scrapeTimeout: 60s
