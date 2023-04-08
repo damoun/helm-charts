@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <a href="#getting-started">Getting Started</a>
+  <a href="#getting-started">Getting Started</a> •
   <a href="#chart-sources">Chart Sources</a>
 </p>
 
