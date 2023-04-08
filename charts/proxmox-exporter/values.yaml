@@ -2,7 +2,7 @@ image: "prompve/prometheus-pve-exporter:2.2.4"
 replicaCount: 1
 
 ingress:
-  enabled: true
+  enabled: false
   hostname: proxmox-exporter.local
   path: /
   pathType: Prefix
@@ -42,7 +42,7 @@ readinessProbe:
 serviceMonitor:
   enabled: false
   extraLabels: {}
-#    release: prometheus
+#   release: prometheus
   interval: 30s
   scrapeTimeout: 30s
   module: default
