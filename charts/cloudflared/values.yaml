@@ -11,6 +11,8 @@ ingress:
 
 service:
   type: ClusterIP
+  nodePorts: {}
+#   http: 2000
   ports:
     http: 2000
 

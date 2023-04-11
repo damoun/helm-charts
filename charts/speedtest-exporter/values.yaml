@@ -16,6 +16,8 @@ annotations: {}
 
 service:
   type: ClusterIP
+  nodePorts: {}
+#   http: 9090
   ports:
     http: 9090
 
