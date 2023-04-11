@@ -6,7 +6,7 @@ version: 1.0.10
 appVersion: "4.0.2"
 dependencies:
   - name: base
-    repository: https://damoun.github.io/helm-charts
+    repository: https://charts.damoun.dev
     tags:
       - damoun-base
     version: 1.x.x
