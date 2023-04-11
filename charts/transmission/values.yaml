@@ -15,6 +15,9 @@ containerPorts:
 
 service:
   type: ClusterIP
+  nodePorts: {}
+#   http: 9091
+#   peer: 51413
   ports:
     http: 9091
     peer: 51413

@@ -2,11 +2,11 @@ apiVersion: v2
 name: speedtest-exporter
 description: Prometheus Speedtest exporter Helm Chart
 type: application
-version: 1.0.4
+version: 1.0.5
 appVersion: "0.0.5"
 dependencies:
   - name: base
-    repository: https://damoun.github.io/helm-charts
+    repository: https://charts.damoun.dev
     tags:
       - damoun-base
     version: 1.x.x

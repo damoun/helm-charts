@@ -16,6 +16,8 @@ annotations: {}
 
 service:
   type: ClusterIP
+  nodePorts: {}
+#   http: 9221
   ports:
     http: 9221
 
