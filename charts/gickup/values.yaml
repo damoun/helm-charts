@@ -2,4 +2,6 @@ image: "buddyspencer/gickup:0.10.14"
 schedule: "0 0 * * Sun"
 persistence:
   enabled: false
+secret:
+  enabled: false
 annotations: {}
