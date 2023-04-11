@@ -41,6 +41,26 @@ entries:
   cloudflared:
   - apiVersion: v2
     appVersion: 2023.3.1
+    created: "2023-04-11T16:51:53.39227084Z"
+    dependencies:
+    - name: base
+      repository: https://charts.damoun.dev
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Cloudflared tunnel Helm Chart
+    digest: 162e9e465cd78625e30124f837bfa0cb4b2c1f9123f81b4d20aecf26fddd2c43
+    maintainers:
+    - email: damien@plenard.me
+      name: damoun
+      url: https://github.com/damoun
+    name: cloudflared
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.1.7/cloudflared-1.1.7.tgz
+    version: 1.1.7
+  - apiVersion: v2
+    appVersion: 2023.3.1
     created: "2023-04-11T15:56:35.253270451Z"
     dependencies:
     - name: base
@@ -158,6 +178,26 @@ entries:
   gickup:
   - apiVersion: v2
     appVersion: 0.10.14
+    created: "2023-04-11T16:51:53.554665807Z"
+    dependencies:
+    - name: base
+      repository: https://charts.damoun.dev
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Gickup cron job Helm Chart
+    digest: 018441e46bb672249baf1f534264d6d1b2526f42baa8c59b9e5aca46bb1c31c7
+    maintainers:
+    - email: damien@plenard.me
+      name: damoun
+      url: https://github.com/damoun
+    name: gickup
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/gickup-1.2.2/gickup-1.2.2.tgz
+    version: 1.2.2
+  - apiVersion: v2
+    appVersion: 0.10.14
     created: "2023-04-11T15:56:35.465644106Z"
     dependencies:
     - name: base
@@ -260,6 +300,26 @@ entries:
     - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.1.0/home-assistant-0.1.0.tgz
     version: 0.1.0
   proxmox-exporter:
+  - apiVersion: v2
+    appVersion: 2.2.4
+    created: "2023-04-11T16:51:53.670572595Z"
+    dependencies:
+    - name: base
+      repository: https://charts.damoun.dev
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Prometheus Proxmox exporter Helm Chart
+    digest: 3f7fff13a9a7a9cbec8f2269a0c2dbe4ac57926fe4fa0373c1fb1b91a93b64af
+    maintainers:
+    - email: damien@plenard.me
+      name: damoun
+      url: https://github.com/damoun
+    name: proxmox-exporter
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.3.6/proxmox-exporter-1.3.6.tgz
+    version: 1.3.6
   - apiVersion: v2
     appVersion: 2.2.4
     created: "2023-04-11T15:56:35.899546169Z"
@@ -427,6 +487,26 @@ entries:
   speedtest-exporter:
   - apiVersion: v2
     appVersion: 0.0.5
+    created: "2023-04-11T16:51:53.814208527Z"
+    dependencies:
+    - name: base
+      repository: https://charts.damoun.dev
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Prometheus Speedtest exporter Helm Chart
+    digest: 0bbab680518063a5a624c89e93026d14e66f2eb88b19c395c1a0079d842f5bea
+    maintainers:
+    - email: damien@plenard.me
+      name: damoun
+      url: https://github.com/damoun
+    name: speedtest-exporter
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.5/speedtest-exporter-1.0.5.tgz
+    version: 1.0.5
+  - apiVersion: v2
+    appVersion: 0.0.5
     created: "2023-04-11T15:56:36.106401831Z"
     dependencies:
     - name: base
@@ -510,6 +590,26 @@ entries:
     - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.0/speedtest-exporter-1.0.0.tgz
     version: 1.0.0
   transmission:
+  - apiVersion: v2
+    appVersion: 4.0.2
+    created: "2023-04-11T16:51:53.951021Z"
+    dependencies:
+    - name: base
+      repository: https://charts.damoun.dev
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Transmission bittorrent client Helm Chart
+    digest: 6c5462a6aeb077bc9b5a5dacdd4ba5d86d9c1c12dd0889d69f72b1581f2738ae
+    maintainers:
+    - email: damien@plenard.me
+      name: damoun
+      url: https://github.com/damoun
+    name: transmission
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/transmission-1.0.10/transmission-1.0.10.tgz
+    version: 1.0.10
   - apiVersion: v2
     appVersion: 4.0.2
     created: "2023-04-11T15:56:36.32797944Z"
@@ -620,4 +720,4 @@ entries:
     urls:
     - https://github.com/damoun/helm-charts/releases/download/transmission-0.1.0/transmission-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-11T15:56:36.328256145Z"
+generated: "2023-04-11T16:51:53.951148403Z"
