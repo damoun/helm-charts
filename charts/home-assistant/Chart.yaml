@@ -23,6 +23,6 @@ version: 0.1.1
 # It is recommended to use it with quotes.
 appVersion: "2023.3.0"
 maintainers:
-  - name: Damien Plénard
+  - name: damoun
     email: damien@plenard.me
     url: https://github.com/damoun

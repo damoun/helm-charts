@@ -11,6 +11,6 @@ dependencies:
       - damoun-base
     version: 1.x.x
 maintainers:
-  - name: Damien Plénard
+  - name: damoun
     email: damien@plenard.me
     url: https://github.com/damoun
