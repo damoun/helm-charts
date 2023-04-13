@@ -37,3 +37,4 @@ helm install speedtest-exporter damoun/speedtest-exporter
 * `damoun/gickup`: Chart for [Gickup](https://github.com/cooperspencer/gickup) command line.
 * `damoun/proxmox-exporter`: Chart for Prometheus [Proxmox exporter](https://github.com/prometheus-pve/prometheus-pve-exporter).
 * `damoun/speedtest-exporter`: Chart for Prometheus [Speedtest exporter](https://github.com/danopstech/speedtest_exporter).
+* `damoun/cloudflared`: Chart for [Cloudflared](https://github.com/cloudflare/cloudflared).
