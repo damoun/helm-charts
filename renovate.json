@@ -12,7 +12,7 @@
       ],
       "postUpgradeTasks": {
         "commands": [
-          "version=$(grep '^version:' charts/{{{parentDir}}}/Chart.yaml | awk '{print $2}') && major=$(echo $version | cut -d. -f1) && minor=$(echo $version | cut -d. -f2) && patch=$(echo $version | cut -d. -f3) && minor=$(expr $minor + 1) && echo \"Replacing $version with $major.$minor.$patch\" && sed -i \"s/^version:.*/version: ${major}.${minor}.${patch}/g\" charts/{{{parentDir}}}/Chart.yaml && sed -i \"s/^appVersion:.*/appVersion: \\\"{{newVersion}}\\\"/g\" charts/{{{parentDir}}}/Chart.yaml && cat charts/{{{parentDir}}}/Chart.yaml"
+          "version=$(grep '^version:' charts/{{{parentDir}}}/Chart.yaml | awk '{print $2}') && major=$(echo $version | cut -d. -f1) && minor=$(echo $version | cut -d. -f2) && minor=$(expr $minor + 1) && echo \"Replacing $version with $major.$minor.0\" && sed -i \"s/^version:.*/version: ${major}.${minor}.0/g\" charts/{{{parentDir}}}/Chart.yaml && sed -i \"s/^appVersion:.*/appVersion: \\\"{{newVersion}}\\\"/g\" charts/{{{parentDir}}}/Chart.yaml && cat charts/{{{parentDir}}}/Chart.yaml"
         ],
         "fileFilters": [
           "**/Chart.yaml"
