@@ -316,6 +316,20 @@ entries:
     version: 0.1.0
   home-assistant:
   - apiVersion: v2
+    appVersion: 2023.4.6
+    created: "2023-04-22T14:41:49.899691698Z"
+    description: Home assistant home automation kubernetes helm chart
+    digest: 5b64e944b6fd797978b847034756f4d6445a985e2d14ffbfc2a59b14ebd79110
+    maintainers:
+    - email: damien@plenard.me
+      name: damoun
+      url: https://github.com/damoun
+    name: home-assistant
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.4.0/home-assistant-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
     appVersion: 2023.4.5
     created: "2023-04-18T06:26:37.988768816Z"
     description: Home assistant home automation kubernetes helm chart
@@ -808,4 +822,4 @@ entries:
     urls:
     - https://github.com/damoun/helm-charts/releases/download/transmission-0.1.0/transmission-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-18T06:26:37.988856418Z"
+generated: "2023-04-22T14:41:49.899768398Z"
