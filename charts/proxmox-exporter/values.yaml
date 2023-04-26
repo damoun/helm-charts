@@ -1,4 +1,4 @@
-image: "prompve/prometheus-pve-exporter:2.2.4"
+image: "prompve/prometheus-pve-exporter:2.3.0"
 replicaCount: 1
 
 ingress:
