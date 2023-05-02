@@ -40,6 +40,26 @@ entries:
     version: 1.0.0
   cloudflared:
   - apiVersion: v2
+    appVersion: 2023.5.0
+    created: "2023-05-02T17:33:59.236539793Z"
+    dependencies:
+    - name: base
+      repository: https://charts.damoun.dev
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Cloudflared tunnel Helm Chart
+    digest: 404c03438de5f502d9cb0fdce4719ce2b8f125f4941cb9606512faba495a309c
+    maintainers:
+    - email: damien@plenard.me
+      name: damoun
+      url: https://github.com/damoun
+    name: cloudflared
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.5.0/cloudflared-1.5.0.tgz
+    version: 1.5.0
+  - apiVersion: v2
     appVersion: 2023.4.2
     created: "2023-04-25T06:25:33.436891713Z"
     dependencies:
@@ -236,6 +256,26 @@ entries:
     - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.0.0/cloudflared-1.0.0.tgz
     version: 1.0.0
   gickup:
+  - apiVersion: v2
+    appVersion: 0.10.15
+    created: "2023-05-02T17:33:59.357419561Z"
+    dependencies:
+    - name: base
+      repository: https://charts.damoun.dev
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Gickup cron job Helm Chart
+    digest: b46bcfdde375bfdbbd5b4cc39e49214d7ff28de2d15988819ea714515903c425
+    maintainers:
+    - email: damien@plenard.me
+      name: damoun
+      url: https://github.com/damoun
+    name: gickup
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/gickup-1.3.0/gickup-1.3.0.tgz
+    version: 1.3.0
   - apiVersion: v2
     appVersion: 0.10.14
     created: "2023-04-11T16:51:53.554665807Z"
@@ -862,4 +902,4 @@ entries:
     urls:
     - https://github.com/damoun/helm-charts/releases/download/transmission-0.1.0/transmission-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-26T12:59:57.396995316Z"
+generated: "2023-05-02T17:33:59.357542764Z"
