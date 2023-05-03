@@ -16,11 +16,17 @@ spec:
       labels: {{- include "base.labels.standard" . | nindent 8 }}
     spec:
       containers:
-        - name: transmission
+        - name: omada-controller
           image: {{ .Values.image }}
           {{- if .Values.resources }}
           resources: {{- toYaml .Values.resources | nindent 12 }}
           {{- end }}
+          env:
+            - name: MONGO_URL
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.mongoUri.secretName }}
+                  key: {{ .Values.mongoUri.secretKey | quote }}
           ports:
             - name: https
               containerPort: {{ .Values.containerPorts.https }}
