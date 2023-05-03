@@ -1,0 +1,39 @@
+image: "ghcr.io/damoun/omada:v5.9.31"
+replicaCount: 1
+
+ingress:
+  enabled: false
+  hostname: omada.local
+  path: /
+  pathType: Prefix
+  backend:
+    servicePort: https
+
+containerPorts:
+  https: 8043
+
+service:
+  type: ClusterIP
+  nodePorts: {}
+  ports:
+    https: 8083
+
+livenessProbe:
+  enabled: true
+  path: /
+  port: 8043
+  initialDelaySeconds: 180
+  periodSeconds: 20
+  timeoutSeconds: 5
+  failureThreshold: 6
+  successThreshold: 1
+
+readinessProbe:
+  enabled: true
+  path: /
+  port: 8043
+  initialDelaySeconds: 180
+  periodSeconds: 20
+  timeoutSeconds: 5
+  failureThreshold: 6
+  successThreshold: 1
