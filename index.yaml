@@ -441,6 +441,27 @@ entries:
     urls:
     - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.1.0/home-assistant-0.1.0.tgz
     version: 0.1.0
+  omada-controller:
+  - apiVersion: v2
+    appVersion: 5.9.31
+    created: "2023-05-03T20:38:11.183597316Z"
+    dependencies:
+    - name: base
+      repository: https://charts.damoun.dev
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Omada software controller Helm Chart
+    digest: ebff6a299ce6a36ed5aff6cfc338e2056ac6fa3078c5d52fa99cb1643f31d115
+    maintainers:
+    - email: damien@plenard.me
+      name: damoun
+      url: https://github.com/damoun
+    name: omada-controller
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.0.0/omada-controller-1.0.0.tgz
+    version: 1.0.0
   proxmox-exporter:
   - apiVersion: v2
     appVersion: 2.3.0
@@ -902,4 +923,4 @@ entries:
     urls:
     - https://github.com/damoun/helm-charts/releases/download/transmission-0.1.0/transmission-0.1.0.tgz
     version: 0.1.0
-generated: "2023-05-02T17:33:59.357542764Z"
+generated: "2023-05-03T20:38:11.183672218Z"
