@@ -11,12 +11,15 @@ ingress:
 
 containerPorts:
   https: 8043
+  discovery: 29810
 
 service:
   type: ClusterIP
-  nodePorts: {}
+  nodePorts:
+    discovery: 29810
   ports:
     https: 8043
+    discovery: 29810
 
 livenessProbe:
   enabled: true

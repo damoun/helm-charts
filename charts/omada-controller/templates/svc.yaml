@@ -25,4 +25,10 @@ spec:
       {{- if and (or (eq .Values.service.type "NodePort") (eq .Values.service.type "LoadBalancer")) (not (empty .Values.service.nodePorts.https)) }}
       nodePort: {{ .Values.service.nodePorts.https }}
       {{- end }}
+    - name: discovery
+      port: {{ .Values.service.ports.discovery }}
+      targetPort: discovery
+      {{- if and (or (eq .Values.service.type "NodePort") (eq .Values.service.type "LoadBalancer")) (not (empty .Values.service.nodePorts.discovery)) }}
+      nodePort: {{ .Values.service.nodePorts.discovery }}
+      {{- end }}
   selector: {{- include "base.labels.matchLabels" . | nindent 4 }}
