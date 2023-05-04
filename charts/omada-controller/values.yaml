@@ -16,7 +16,7 @@ service:
   type: ClusterIP
   nodePorts: {}
   ports:
-    https: 8083
+    https: 8043
 
 livenessProbe:
   enabled: true
