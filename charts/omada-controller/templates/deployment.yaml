@@ -31,6 +31,9 @@ spec:
             - name: https
               containerPort: {{ .Values.containerPorts.https }}
               protocol: TCP
+            - name: discovery
+              containerPort: {{ .Values.containerPorts.discovery }}
+              protocol: TCP
           {{- if .Values.livenessProbe.enabled }}
           livenessProbe:
             httpGet:
