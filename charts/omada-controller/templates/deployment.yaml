@@ -25,14 +25,36 @@ spec:
           env:
             - name: OMADA_PORT_DISCOVERY
               value: "{{ .Values.containerPorts.discovery }}"
+            - name: OMADA_PORT_ADOPT_V1
+              value: "{{ .Values.containerPorts.adoptV1 }}"
+            - name: OMADA_PORT_UPGRADE_V1
+              value: "{{ .Values.containerPorts.upgradeV1 }}"
+            - name: OMADA_PORT_MANAGER_V1
+              value: "{{ .Values.containerPorts.managerV1 }}"
+            - name: OMADA_PORT_MANAGER_V2
+              value: "{{ .Values.containerPorts.managerV2 }}"
+            - name: OMADA_MANAGE_HTTPS_PORT
+              value: "{{ .Values.containerPorts.portalHttps }}"
             - name: MONGO_URL
               valueFrom:
                 secretKeyRef:
                   name: {{ .Values.mongoUri.secretName }}
                   key: {{ .Values.mongoUri.secretKey | quote }}
           ports:
-            - name: https
-              containerPort: {{ .Values.containerPorts.https }}
+            - name: portal-https
+              containerPort: {{ .Values.containerPorts.portalHttps }}
+              protocol: TCP
+            - name: adopt-v1
+              containerPort: {{ .Values.containerPorts.adoptV1 }}
+              protocol: TCP
+            - name: upgrade-v1
+              containerPort: {{ .Values.containerPorts.upradeV1 }}
+              protocol: TCP
+            - name: manager-v1
+              containerPort: {{ .Values.containerPorts.managerV1 }}
+              protocol: TCP
+            - name: manager-v2
+              containerPort: {{ .Values.containerPorts.managerV2 }}
               protocol: TCP
             - name: discovery
               containerPort: {{ .Values.containerPorts.discovery }}

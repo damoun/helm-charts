@@ -1,35 +1,106 @@
+---
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ .Release.Name }}
+  name: {{ .Release.Name }}-http
   namespace: {{ .Release.Namespace | quote }}
   labels: {{- include "base.labels.standard" . | nindent 4 }}
 spec:
-  type: {{ .Values.service.type }}
-  {{- if and .Values.service.clusterIP (eq .Values.service.type "ClusterIP") }}
-  clusterIP: {{ .Values.service.clusterIP }}
+  type: {{ .Values.service.http.type }}
+  {{- if and .Values.service.http.clusterIP (eq .Values.service.http.type "ClusterIP") }}
+  clusterIP: {{ .Values.service.http.clusterIP }}
   {{- end }}
-  {{- if (or (eq .Values.service.type "LoadBalancer") (eq .Values.service.type "NodePort")) }}
-  externalTrafficPolicy: {{ .Values.service.externalTrafficPolicy | quote }}
+  {{- if (or (eq .Values.service.http.type "LoadBalancer") (eq .Values.service.http.type "NodePort")) }}
+  externalTrafficPolicy: {{ .Values.service.http.externalTrafficPolicy | quote }}
   {{- end }}
-  {{ if eq .Values.service.type "LoadBalancer" }}
-  loadBalancerSourceRanges: {{ .Values.service.loadBalancerSourceRanges }}
+  {{ if eq .Values.service.http.type "LoadBalancer" }}
+  loadBalancerSourceRanges: {{ .Values.service.http.loadBalancerSourceRanges }}
   {{ end }}
-  {{- if (and (eq .Values.service.type "LoadBalancer") (not (empty .Values.service.loadBalancerIP))) }}
-  loadBalancerIP: {{ .Values.service.loadBalancerIP }}
+  {{- if (and (eq .Values.service.http.type "LoadBalancer") (not (empty .Values.service.http.loadBalancerIP))) }}
+  loadBalancerIP: {{ .Values.service.http.loadBalancerIP }}
   {{- end }}
   ports:
-    - name: https
-      port: {{ .Values.service.ports.https }}
-      targetPort: https
-      {{- if and (or (eq .Values.service.type "NodePort") (eq .Values.service.type "LoadBalancer")) (not (empty .Values.service.nodePorts.https)) }}
-      nodePort: {{ .Values.service.nodePorts.https }}
+    - name: portal-https
+      port: {{ .Values.service.http.ports.portalHttps }}
+      targetPort: portal-https
+      {{- if and (or (eq .Values.service.http.type "NodePort") (eq .Values.service.http.type "LoadBalancer")) (not (empty .Values.service.nodePorts.portalHttps)) }}
+      nodePort: {{ .Values.service.http.nodePorts.portalHttps }}
       {{- end }}
+  selector: {{- include "base.labels.matchLabels" . | nindent 4 }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-tcp
+  namespace: {{ .Release.Namespace | quote }}
+  labels: {{- include "base.labels.standard" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.tcp.type }}
+  {{- if and .Values.service.tcp.clusterIP (eq .Values.service.tcp.type "ClusterIP") }}
+  clusterIP: {{ .Values.service.tcp.clusterIP }}
+  {{- end }}
+  {{- if (or (eq .Values.service.tcp.type "LoadBalancer") (eq .Values.service.tcp.type "NodePort")) }}
+  externalTrafficPolicy: {{ .Values.service.tcp.externalTrafficPolicy | quote }}
+  {{- end }}
+  {{ if eq .Values.service.tcp.type "LoadBalancer" }}
+  loadBalancerSourceRanges: {{ .Values.service.tcp.loadBalancerSourceRanges }}
+  {{ end }}
+  {{- if (and (eq .Values.service.tcp.type "LoadBalancer") (not (empty .Values.service.tcp.loadBalancerIP))) }}
+  loadBalancerIP: {{ .Values.service.tcp.loadBalancerIP }}
+  {{- end }}
+  ports:
+    - name: manager-v1
+      port: {{ .Values.service.tcp.ports.managerV1 }}
+      targetPort: manager-v1
+      {{- if and (or (eq .Values.service.tcp.type "NodePort") (eq .Values.service.tcp.type "LoadBalancer")) (not (empty .Values.service.tcp.nodePorts.managerV1)) }}
+      nodePort: {{ .Values.service.tcp.nodePorts.managerV1 }}
+      {{- end }}
+    - name: manager-v2
+      port: {{ .Values.service.tcp.ports.managerV2 }}
+      targetPort: manager-v2
+      {{- if and (or (eq .Values.service.tcp.type "NodePort") (eq .Values.service.tcp.type "LoadBalancer")) (not (empty .Values.service.tcp.nodePorts.managerV2)) }}
+      nodePort: {{ .Values.service.tcp.nodePorts.managerV2 }}
+      {{- end }}
+    - name: upgrade-v1
+      port: {{ .Values.service.tcp.ports.upgradeV1 }}
+      targetPort: upgrade-v1
+      {{- if and (or (eq .Values.service.tcp.type "NodePort") (eq .Values.service.tcp.type "LoadBalancer")) (not (empty .Values.service.tcp.nodePorts.upgradeV1)) }}
+      nodePort: {{ .Values.service.tcp.nodePorts.upgradeV1 }}
+      {{- end }}
+    - name: adopt-v1
+      port: {{ .Values.service.tcp.ports.adoptV1 }}
+      targetPort: upgrade-v1
+      {{- if and (or (eq .Values.service.tcp.type "NodePort") (eq .Values.service.tcp.type "LoadBalancer")) (not (empty .Values.service.tcp.nodePorts.adoptV1)) }}
+      nodePort: {{ .Values.service.tcp.nodePorts.adoptV1 }}
+      {{- end }}
+  selector: {{- include "base.labels.matchLabels" . | nindent 4 }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-udp
+  namespace: {{ .Release.Namespace | quote }}
+  labels: {{- include "base.labels.standard" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.udp.type }}
+  {{- if and .Values.service.udp.clusterIP (eq .Values.service.udp.type "ClusterIP") }}
+  clusterIP: {{ .Values.service.udp.clusterIP }}
+  {{- end }}
+  {{- if (or (eq .Values.service.udp.type "LoadBalancer") (eq .Values.service.udp.type "NodePort")) }}
+  externalTrafficPolicy: {{ .Values.service.udp.externalTrafficPolicy | quote }}
+  {{- end }}
+  {{ if eq .Values.service.udp.type "LoadBalancer" }}
+  loadBalancerSourceRanges: {{ .Values.service.udp.loadBalancerSourceRanges }}
+  {{ end }}
+  {{- if (and (eq .Values.service.udp.type "LoadBalancer") (not (empty .Values.service.udp.loadBalancerIP))) }}
+  loadBalancerIP: {{ .Values.service.udp.loadBalancerIP }}
+  {{- end }}
+  ports:
     - name: discovery
-      port: {{ .Values.service.ports.discovery }}
+      port: {{ .Values.service.udp.ports.discovery }}
       protocol: UDP
       targetPort: discovery
-      {{- if and (or (eq .Values.service.type "NodePort") (eq .Values.service.type "LoadBalancer")) (not (empty .Values.service.nodePorts.discovery)) }}
-      nodePort: {{ .Values.service.nodePorts.discovery }}
+      {{- if and (or (eq .Values.service.udp.type "NodePort") (eq .Values.service.udp.type "LoadBalancer")) (not (empty .Values.service.udp.nodePorts.discovery)) }}
+      nodePort: {{ .Values.service.udp.nodePorts.discovery }}
       {{- end }}
   selector: {{- include "base.labels.matchLabels" . | nindent 4 }}

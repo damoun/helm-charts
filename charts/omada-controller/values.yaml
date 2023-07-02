@@ -11,16 +11,38 @@ ingress:
     servicePort: https
 
 containerPorts:
-  https: 8043
+  portalHttps: 8043
   discovery: 29810
+  adoptV1: 29812
+  upgradeV1: 29813
+  managerV1: 29811
+  managerV2: 29814
 
 service:
-  type: ClusterIP
-  nodePorts:
-    discovery: 29810
-  ports:
-    https: 8043
-    discovery: 29810
+  http:
+    type: ClusterIP
+    nodePorts:
+      portalHttps: 8043
+    ports:
+      portalHttps: 8043
+  tcp:
+    type: ClusterIP
+    nodePorts:
+      adoptV1: 29812
+      upgradeV1: 29813
+      managerV1: 29811
+      managerV2: 29814
+    ports:
+      adoptV1: 29812
+      upgradeV1: 29813
+      managerV1: 29811
+      managerV2: 29814
+  udp:
+    type: ClusterIP
+    nodePorts:
+      discovery: 29810
+    ports:
+      discovery: 29810
 
 livenessProbe:
   enabled: true
