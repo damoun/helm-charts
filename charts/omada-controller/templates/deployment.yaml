@@ -48,7 +48,7 @@ spec:
               containerPort: {{ .Values.containerPorts.adoptV1 }}
               protocol: TCP
             - name: upgrade-v1
-              containerPort: {{ .Values.containerPorts.upradeV1 }}
+              containerPort: {{ .Values.containerPorts.upgradeV1 }}
               protocol: TCP
             - name: manager-v1
               containerPort: {{ .Values.containerPorts.managerV1 }}
