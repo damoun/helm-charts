@@ -22,6 +22,8 @@ spec:
           resources: {{- toYaml .Values.resources | nindent 12 }}
           {{- end }}
           env:
+            - name: OMADA_PORT_DISCOVERY
+              value: {{ .Values.port.discovery }}
             - name: MONGO_URL
               valueFrom:
                 secretKeyRef:

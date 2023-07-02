@@ -27,6 +27,7 @@ spec:
       {{- end }}
     - name: discovery
       port: {{ .Values.service.ports.discovery }}
+      protocol: UDP
       targetPort: discovery
       {{- if and (or (eq .Values.service.type "NodePort") (eq .Values.service.type "LoadBalancer")) (not (empty .Values.service.nodePorts.discovery)) }}
       nodePort: {{ .Values.service.nodePorts.discovery }}
