@@ -36,7 +36,7 @@ spec:
               protocol: TCP
             - name: discovery
               containerPort: {{ .Values.containerPorts.discovery }}
-              protocol: TCP
+              protocol: UDP
           {{- if .Values.livenessProbe.enabled }}
           livenessProbe:
             httpGet:
