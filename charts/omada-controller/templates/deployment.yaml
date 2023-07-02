@@ -23,7 +23,7 @@ spec:
           {{- end }}
           env:
             - name: OMADA_PORT_DISCOVERY
-              value: {{ .Values.port.discovery }}
+              value: {{ .Values.containerPorts.discovery }}
             - name: MONGO_URL
               valueFrom:
                 secretKeyRef:
