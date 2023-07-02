@@ -622,6 +622,26 @@ entries:
   omada-controller:
   - apiVersion: v2
     appVersion: 5.9.31
+    created: "2023-07-02T11:47:58.321378009Z"
+    dependencies:
+    - name: base
+      repository: https://charts.damoun.dev
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Omada software controller Helm Chart
+    digest: 4449fdebdc78b596d05c18eb8a75b72f7ef9ca7c7209c05dfd8ad265d3163a44
+    maintainers:
+    - email: damien@plenard.me
+      name: damoun
+      url: https://github.com/damoun
+    name: omada-controller
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.2.2/omada-controller-1.2.2.tgz
+    version: 1.2.2
+  - apiVersion: v2
+    appVersion: 5.9.31
     created: "2023-06-29T20:54:42.632605703Z"
     dependencies:
     - name: base
@@ -1161,4 +1181,4 @@ entries:
     urls:
     - https://github.com/damoun/helm-charts/releases/download/transmission-0.1.0/transmission-0.1.0.tgz
     version: 0.1.0
-generated: "2023-06-29T20:54:42.632938009Z"
+generated: "2023-07-02T11:47:58.321503412Z"
