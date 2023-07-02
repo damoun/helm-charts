@@ -23,7 +23,7 @@ spec:
     - name: portal-https
       port: {{ .Values.service.http.ports.portalHttps }}
       targetPort: portal-https
-      {{- if and (or (eq .Values.service.http.type "NodePort") (eq .Values.service.http.type "LoadBalancer")) (not (empty .Values.service.nodePorts.portalHttps)) }}
+      {{- if and (or (eq .Values.service.http.type "NodePort") (eq .Values.service.http.type "LoadBalancer")) (not (empty .Values.service.http.nodePorts.portalHttps)) }}
       nodePort: {{ .Values.service.http.nodePorts.portalHttps }}
       {{- end }}
   selector: {{- include "base.labels.matchLabels" . | nindent 4 }}
