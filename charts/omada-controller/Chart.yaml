@@ -2,7 +2,7 @@ apiVersion: v2
 name: omada-controller
 description: Omada software controller Helm Chart
 type: application
-version: 1.2.4
+version: 1.2.5
 appVersion: "5.9.31"
 dependencies:
   - name: base

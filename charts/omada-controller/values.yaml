@@ -1,4 +1,5 @@
 image: "ghcr.io/damoun/omada:v5.9.31"
+imagePullPolicy: IfNotPresent
 replicaCount: 1
 
 ingress:
