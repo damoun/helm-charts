@@ -2,8 +2,8 @@ apiVersion: v2
 name: cloudflared
 description: Cloudflared tunnel Helm Chart
 type: application
-version: 1.10.0
-appVersion: "2023.7.1"
+version: 1.11.0
+appVersion: "2023.7.2"
 dependencies:
   - name: base
     repository: https://charts.damoun.dev
