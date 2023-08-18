@@ -1,4 +1,4 @@
-image: "buddyspencer/gickup:0.10.17"
+image: "buddyspencer/gickup:0.10.18"
 schedule: "0 0 * * Sun"
 persistence:
   enabled: false
