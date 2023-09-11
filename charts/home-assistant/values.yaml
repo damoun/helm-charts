@@ -1,5 +1,5 @@
 deployment:
-  image: "ghcr.io/home-assistant/home-assistant:2023.6.3"
+  image: "ghcr.io/home-assistant/home-assistant:2023.9.1"
   replicas: 1
 
 ingress:
