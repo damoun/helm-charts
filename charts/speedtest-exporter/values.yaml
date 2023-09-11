@@ -1,4 +1,4 @@
-image: "ghcr.io/danopstech/speedtest_exporter:v0.0.5"
+image: "ghcr.io/danopstech/speedtest_exporter:v0.0.5@sha256:99efbe55412b0a328d5827fab8dbcc2286093d4ad0d369e4e9b7e3c4153793be"
 replicaCount: 1
 
 ingress:

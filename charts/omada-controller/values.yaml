@@ -1,4 +1,4 @@
-image: "ghcr.io/damoun/omada:v5.9.31"
+image: "ghcr.io/damoun/omada:v5.9.31@sha256:5c1e60014f537fae4b9f7db0aae21e78666dbdb5cf68e3985175f73983ddf470"
 imagePullPolicy: IfNotPresent
 replicaCount: 1
 
