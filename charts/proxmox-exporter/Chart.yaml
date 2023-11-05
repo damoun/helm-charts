@@ -2,8 +2,8 @@ apiVersion: v2
 name: proxmox-exporter
 description: Prometheus Proxmox exporter Helm Chart
 type: application
-version: 1.6.0
-appVersion: "3.0.0"
+version: 1.7.0
+appVersion: "3.0.2"
 dependencies:
   - name: base
     repository: https://charts.damoun.dev
