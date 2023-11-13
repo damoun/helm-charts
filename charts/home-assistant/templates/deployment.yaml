@@ -71,7 +71,6 @@ spec:
               {{- else if .Values.persistence.subPathExpr }}
               subPathExpr: {{ .Values.persistence.subPathExpr }}
               {{- end }}
-              mountPath: /config/.storage
             - name: config-volume
               mountPath: /config/configuration.yaml
               subPath: configuration.yaml
