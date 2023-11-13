@@ -8,7 +8,7 @@ configmap:
           trusted_proxies:
             - "10.0.0.0/8"
 
-env: {}
+env: []
 envFrom: []
 
 image: "ghcr.io/home-assistant/home-assistant:2023.11.2"
