@@ -1,10 +1,3 @@
-deployment:
-  image: "ghcr.io/home-assistant/home-assistant:2023.11.1@sha256:de25f0ad773b54d1c0e5a63147e23417055f3056b0ef24cf4a5ac8019bb33df3"
-  replicas: 1
-
-ingress:
-  host: hass.local
-
 configmap:
   config:
     data:
@@ -14,3 +7,55 @@ configmap:
           use_x_forwarded_for: true
           trusted_proxies:
             - "10.0.0.0/8"
+
+env: {}
+envFrom: []
+
+image: "ghcr.io/home-assistant/home-assistant:2023.11.2"
+imagePullPolicy: IfNotPresent
+replicaCount: 1
+
+containerPort: 8123
+
+annotations: {}
+
+schedule: "* * * * *"
+
+service:
+  type: ClusterIP
+  nodePorts: {}
+#   http: 8123
+  ports:
+    http: 8123
+
+ingress:
+  enabled: false
+  path: /
+  pathType: Prefix
+  backend:
+    servicePort: http
+
+livenessProbe:
+  enabled: false
+  path: /
+  port: 8123
+  initialDelaySeconds: 30
+  periodSeconds: 20
+  timeoutSeconds: 5
+  failureThreshold: 6
+  successThreshold: 1
+
+readinessProbe:
+  enabled: false
+  path: /
+  port: 8123
+  initialDelaySeconds: 30
+  periodSeconds: 20
+  timeoutSeconds: 5
+  failureThreshold: 6
+  successThreshold: 1
+
+persistence:
+  enabled: false
+  path: /config/.storage
+  accessModes: [ReadWriteMany]
