@@ -58,4 +58,4 @@ readinessProbe:
 persistence:
   enabled: false
   path: /config/.storage
-  accessModes: [ReadWriteMany]
+  accessModes: [ReadWriteOnce]
