@@ -2,7 +2,7 @@ apiVersion: v2
 name: home-assistant
 description: Open source home automation that puts local control and privacy first.
 type: application
-version: 1.0.2
+version: 1.0.3
 appVersion: "2023.11.2"
 dependencies:
   - name: base

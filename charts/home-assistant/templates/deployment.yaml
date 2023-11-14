@@ -39,8 +39,8 @@ spec:
             runAsNonRoot: false
             capabilities:
               add:
-                - CAP_NET_RAW
-                - CAP_NET_BIND_SERVICE
+                - NET_RAW
+                - NET_BIND_SERVICE
           {{- if .Values.livenessProbe.enabled }}
           livenessProbe:
             httpGet:
