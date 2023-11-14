@@ -617,6 +617,26 @@ entries:
   home-assistant:
   - apiVersion: v2
     appVersion: 2023.11.2
+    created: "2023-11-14T09:02:46.034998759Z"
+    dependencies:
+    - name: base
+      repository: https://charts.damoun.dev
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Open source home automation that puts local control and privacy first.
+    digest: 29a11a3eeefe74fbc7dfcf67c3e30a9575d8e82cd552f646bbcdc245676087bd
+    maintainers:
+    - email: damien@plenard.me
+      name: damoun
+      url: https://github.com/damoun
+    name: home-assistant
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/home-assistant-1.0.3/home-assistant-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
+    appVersion: 2023.11.2
     created: "2023-11-13T23:03:49.627209016Z"
     dependencies:
     - name: base
@@ -1668,4 +1688,4 @@ entries:
     urls:
     - https://github.com/damoun/helm-charts/releases/download/transmission-0.1.0/transmission-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-13T23:03:49.627558868Z"
+generated: "2023-11-14T09:02:46.035234562Z"
