@@ -1,4 +1,4 @@
-image: "lscr.io/linuxserver/transmission:4.0.4@sha256:44de76f50c31ef96130d2a78c407d58dd22fd475056e901714d4976fef82114a"
+image: "lscr.io/linuxserver/transmission:4.0.4@sha256:bf4313f103377b00c92486d102c2cda28462d4b1bc828bd9df8fc3280b29a605"
 replicaCount: 1
 
 ingress:
