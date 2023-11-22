@@ -11,7 +11,7 @@ configmap:
 env: []
 envFrom: []
 
-image: "ghcr.io/home-assistant/home-assistant:2023.11.2"
+image: "ghcr.io/home-assistant/home-assistant:2023.11.3@sha256:feffc0b8227dbbf9d1bf61c465ff54b24aff2c990a1e54ea7219c4b300260ef9"
 imagePullPolicy: IfNotPresent
 replicaCount: 1
 
