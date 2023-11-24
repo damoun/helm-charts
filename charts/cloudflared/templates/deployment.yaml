@@ -27,6 +27,10 @@ spec:
           {{- end }}
           env: {{- toYaml .Values.env | nindent 12 }}
           envFrom: {{- toYaml .Values.envFrom | nindent 12 }}
+          ports:
+            - containerPort: 2000
+              name: metrics
+              protocol: TCP
           args:
             - tunnel
             - --no-autoupdate

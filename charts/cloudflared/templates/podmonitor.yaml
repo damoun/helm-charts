@@ -1,26 +1,26 @@
-{{- if .Values.serviceMonitor.enabled }}
+{{- if .Values.podMonitor.enabled }}
 apiVersion: monitoring.coreos.com/v1
-kind: ServiceMonitor
+kind: PodMonitor
 metadata:
   name: {{ .Release.Name }}
   namespace: {{ .Release.Namespace | quote }}
   labels:
     {{- include "base.labels.standard" $ | nindent 4 }}
-    {{- toYaml .Values.serviceMonitor.extraLabels | nindent 4 }}
+    {{- toYaml .Values.podMonitor.extraLabels | nindent 4 }}
   {{- with .Values.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
   {{- end }}
 spec:
-  endpoints:
-  - port: http
-    interval: {{ .Values.serviceMonitor.interval }}
-    scrapeTimeout: {{ .Values.serviceMonitor.scrapeTimeout }}
+  podMonitorEndpoints:
+  - port: metrics
+    interval: {{ .Values.podMonitor.interval }}
+    scrapeTimeout: {{ .Values.podMonitor.scrapeTimeout }}
     scheme: http
     path: /metrics
-{{- if .Values.serviceMonitor.metricRelabelings }}
+{{- if .Values.podMonitor.metricRelabelings }}
     metricRelabelings:
-{{ toYaml .Values.serviceMonitor.metricRelabelings | indent 4 }}
+{{ toYaml .Values.podMonitor.metricRelabelings | indent 4 }}
 {{- end }}
   jobLabel: {{ .Release.Name }}
   namespaceSelector:
@@ -28,9 +28,9 @@ spec:
       - {{ .Release.Namespace | quote }}
   selector:
     matchLabels: {{- include "base.labels.matchLabels" $ | nindent 6 }}
-{{- if .Values.serviceMonitor.targetLabels }}
+{{- if .Values.podMonitor.targetLabels }}
   targetLabels:
-{{- range .Values.serviceMonitor.targetLabels }}
+{{- range .Values.podMonitor.targetLabels }}
     - {{ . }}
 {{- end }}
 {{- end }}
