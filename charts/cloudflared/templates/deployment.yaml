@@ -32,7 +32,7 @@ spec:
             - --no-autoupdate
             - run
             - --token
-            - ${CLOUDFLARED_TOKEN}
+            - "$(CLOUDFLARED_TOKEN)"
           {{- if .Values.livenessProbe.enabled }}
           livenessProbe:
             httpGet:
