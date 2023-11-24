@@ -6,8 +6,6 @@ metadata:
   namespace: {{ .Release.Namespace | quote }}
   labels:
     {{- include "base.labels.standard" $ | nindent 4 }}
-    {{- toYaml . | nindent 4 }}
-  {{- end }}
   {{- with .Values.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
