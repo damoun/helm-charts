@@ -41,6 +41,26 @@ entries:
   cloudflared:
   - apiVersion: v2
     appVersion: 2023.10.0
+    created: "2023-11-24T22:44:15.245905369Z"
+    dependencies:
+    - name: base
+      repository: https://charts.damoun.dev
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Cloudflared tunnel Helm Chart
+    digest: 3abd80f472aa02aa6799ee25d1fbca992610e0adbb887d5044926f81b460b3f0
+    maintainers:
+    - email: damien@plenard.me
+      name: damoun
+      url: https://github.com/damoun
+    name: cloudflared
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.0.3/cloudflared-3.0.3.tgz
+    version: 3.0.3
+  - apiVersion: v2
+    appVersion: 2023.10.0
     created: "2023-11-24T22:31:25.803827689Z"
     dependencies:
     - name: base
@@ -1556,6 +1576,26 @@ entries:
   speedtest-exporter:
   - apiVersion: v2
     appVersion: 0.0.5
+    created: "2023-11-24T22:44:15.376169538Z"
+    dependencies:
+    - name: base
+      repository: https://charts.damoun.dev
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Prometheus Speedtest exporter Helm Chart
+    digest: 61b7c71bbbbd07e3284044d9bffa1e4cf7940070c81a5fe76a86e0a2fe554270
+    maintainers:
+    - email: damien@plenard.me
+      name: damoun
+      url: https://github.com/damoun
+    name: speedtest-exporter
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.6/speedtest-exporter-1.0.6.tgz
+    version: 1.0.6
+  - apiVersion: v2
+    appVersion: 0.0.5
     created: "2023-04-11T16:51:53.814208527Z"
     dependencies:
     - name: base
@@ -1848,4 +1888,4 @@ entries:
     urls:
     - https://github.com/damoun/helm-charts/releases/download/transmission-0.1.0/transmission-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-24T22:31:25.804231864Z"
+generated: "2023-11-24T22:44:15.376608918Z"
