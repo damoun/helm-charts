@@ -25,11 +25,14 @@ spec:
           {{- if .Values.resources }}
           resources: {{- toYaml .Values.resources | nindent 12 }}
           {{- end }}
+          env: {{- toYaml .Values.env | nindent 12 }}
+          envFrom: {{- toYaml .Values.envFrom | nindent 12 }}
           args:
             - tunnel
-            - --config
-            - /etc/cloudflared/config/config.yaml
+            - --no-autoupdate
             - run
+            - --token
+            - ${CLOUDFLARED_TOKEN}
           {{- if .Values.livenessProbe.enabled }}
           livenessProbe:
             httpGet:
@@ -52,26 +55,3 @@ spec:
             successThreshold: {{ .Values.readinessProbe.successThreshold }}
             failureThreshold: {{ .Values.readinessProbe.failureThreshold }}
           {{- end }}
-          volumeMounts:
-            - name: config
-              mountPath: /etc/cloudflared/config
-              readOnly: true
-            - name: creds
-              mountPath: /etc/cloudflared/creds
-              readOnly: true
-            - name: certs
-              mountPath: /etc/cloudflared/certs
-              readOnly: true
-      volumes:
-        - name: creds
-          secret:
-            secretName: {{ .Values.secret.credentials.name }}
-        - name: certs
-          secret:
-            secretName: {{ .Values.secret.certificates.name }}
-        - name: config
-          configMap:
-            name: "{{ .Release.Name }}-conf"
-            items:
-              - key: config.yaml
-                path: config.yaml

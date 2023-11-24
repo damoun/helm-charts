@@ -16,11 +16,8 @@ service:
   ports:
     http: 2000
 
-secret:
-  credentials:
-    name: tunnel-credentials
-  certificates:
-    name: tunnel-certificates
+env: []
+envFrom: []
 
 livenessProbe:
   enabled: true
@@ -48,15 +45,3 @@ serviceMonitor:
     release: prometheus
   interval: 30s
   scrapeTimeout: 30s
-
-config:
-  credentials-file: /etc/cloudflared/creds/credentials.json
-  metrics: 0.0.0.0:2000
-  no-autoupdate: true
-  origincert: /etc/cloudflared/certs/cert.pem
-  ingress: []
-#     - hostname: tunnel.example.com
-#       service: http://web-service:80
-#     - hostname: hello.example.com
-#       service: hello_world
-#     - service: http_status:404
