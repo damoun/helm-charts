@@ -637,6 +637,26 @@ entries:
     version: 1.0.0
   gickup:
   - apiVersion: v2
+    appVersion: 0.10.24
+    created: "2023-12-21T12:02:04.239608636Z"
+    dependencies:
+    - name: base
+      repository: https://charts.damoun.dev
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Gickup cron job Helm Chart
+    digest: 89418c04e526c278458a4065e2399a59606565d7974378f27c28d6aec19bc955
+    maintainers:
+    - email: damien@plenard.me
+      name: damoun
+      url: https://github.com/damoun
+    name: gickup
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/gickup-1.9.0/gickup-1.9.0.tgz
+    version: 1.9.0
+  - apiVersion: v2
     appVersion: 0.10.23
     created: "2023-12-03T15:15:48.242574279Z"
     dependencies:
@@ -1967,4 +1987,4 @@ entries:
     urls:
     - https://github.com/damoun/helm-charts/releases/download/transmission-0.1.0/transmission-0.1.0.tgz
     version: 0.1.0
-generated: "2023-12-03T15:15:48.242829066Z"
+generated: "2023-12-21T12:02:04.239800079Z"
