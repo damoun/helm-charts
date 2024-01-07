@@ -1,4 +1,4 @@
-image: "prompve/prometheus-pve-exporter:3.0.2@sha256:8e52bface6e148e2546b452957b373fb15c34fe84d5eab7cf163fdf618b7340a"
+image: "prompve/prometheus-pve-exporter:3.2.1@sha256:8165ea7343a31484bce423aea15df5b37c38a1bb40756e701e0042143e2d9b63"
 replicaCount: 1
 
 ingress:
