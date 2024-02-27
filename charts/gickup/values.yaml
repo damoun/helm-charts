@@ -1,4 +1,4 @@
-image: "buddyspencer/gickup:0.10.24@sha256:f2512a7cf70c1188ab59f0eb424c943b07ca2dbc29aae671099fc08482950e64"
+image: "buddyspencer/gickup:0.10.28@sha256:378126c9a18c7fd07d3e1366d2060d1d84a2ad381594b0483b5bdf29d12bd66f"
 schedule: "0 0 * * Sun"
 persistence:
   enabled: false
