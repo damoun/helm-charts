@@ -40,6 +40,26 @@ entries:
     version: 1.0.0
   cloudflared:
   - apiVersion: v2
+    appVersion: 2024.5.0
+    created: "2024-06-11T07:47:36.015384389Z"
+    dependencies:
+    - name: base
+      repository: https://charts.damoun.dev
+      tags:
+      - damoun-base
+      version: 1.x.x
+    description: Cloudflared tunnel Helm Chart
+    digest: aa58f4d0208b5c0951e0078a0ec4edb3ae55124334f42992ad43b1ff7e8c10f4
+    maintainers:
+    - email: damien@plenard.me
+      name: damoun
+      url: https://github.com/damoun
+    name: cloudflared
+    type: application
+    urls:
+    - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.3.0/cloudflared-3.3.0.tgz
+    version: 3.3.0
+  - apiVersion: v2
     appVersion: 2024.2.1
     created: "2024-03-01T16:17:46.757221134Z"
     dependencies:
@@ -2087,4 +2107,4 @@ entries:
     urls:
     - https://github.com/damoun/helm-charts/releases/download/transmission-0.1.0/transmission-0.1.0.tgz
     version: 0.1.0
-generated: "2024-03-01T16:18:35.052653307Z"
+generated: "2024-06-11T07:47:36.015810787Z"
