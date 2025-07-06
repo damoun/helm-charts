@@ -1,4 +1,4 @@
-image: "cloudflare/cloudflared:2024.5.0@sha256:5d5f70a59d5e124d4a1a747769e0d27431861877860ca31deaad41b09726ca71"
+image: "cloudflare/cloudflared:2025.7.0@sha256:803b17adb5326a38ce397b9c9f374289ad290ee5526d204b5879a1423b6f5c3e"
 replicaCount: 2
 
 containerPorts:
