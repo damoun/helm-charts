@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helm Charts — damoun</title>
+  <script src="https://cdn.hopjs.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #79c0ff;
+      --badge-lib: #388bfd26;
+      --badge-lib-text: #58a6ff;
+      --badge-app: #23883626;
+      --badge-app-text: #3fb950;
+      --code-bg: #0d1117;
+      --shadow: 0 1px 3px rgba(0,0,0,.3);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f6f8fa;
+        --surface: #ffffff;
+        --border: #d0d7de;
+        --text: #1f2328;
+        --text-muted: #656d76;
+        --accent: #0969da;
+        --accent-hover: #0550ae;
+        --badge-lib: #ddf4ff;
+        --badge-lib-text: #0969da;
+        --badge-app: #dafbe1;
+        --badge-app-text: #1a7f37;
+        --code-bg: #f6f8fa;
+        --shadow: 0 1px 3px rgba(31,35,40,.12);
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); text-decoration: underline; }
+
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 0;
+      background: var(--surface);
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 1rem; }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .header h1 { font-size: 1.4rem; font-weight: 600; }
+    .header h1 span { color: var(--text-muted); font-weight: 400; }
+    .header-links { display: flex; gap: 1rem; font-size: .875rem; }
+
+    .toolbar { padding: 1.5rem 0 1rem; }
+    .search-box {
+      width: 100%;
+      padding: .6rem .9rem;
+      font-size: .95rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--surface);
+      color: var(--text);
+      outline: none;
+      transition: border-color .15s;
+    }
+    .search-box:focus { border-color: var(--accent); }
+    .search-box::placeholder { color: var(--text-muted); }
+
+    .chart-count { font-size: .85rem; color: var(--text-muted); margin-top: .5rem; }
+
+    .charts { display: grid; gap: 1rem; padding-bottom: 3rem; }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      box-shadow: var(--shadow);
+      transition: border-color .15s;
+    }
+    .card:hover { border-color: var(--accent); }
+
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: .75rem; flex-wrap: wrap; }
+    .card-title { font-size: 1.15rem; font-weight: 600; }
+    .badge {
+      display: inline-block;
+      font-size: .75rem;
+      font-weight: 500;
+      padding: .15em .55em;
+      border-radius: 12px;
+    }
+    .badge-library { background: var(--badge-lib); color: var(--badge-lib-text); }
+    .badge-application { background: var(--badge-app); color: var(--badge-app-text); }
+
+    .card-desc { color: var(--text-muted); margin: .4rem 0 .75rem; font-size: .9rem; }
+
+    .card-meta { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; font-size: .82rem; color: var(--text-muted); margin-bottom: .75rem; }
+    .card-meta strong { color: var(--text); font-weight: 500; }
+
+    .version-select {
+      font-size: .82rem;
+      padding: .2rem .4rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: var(--surface);
+      color: var(--text);
+    }
+
+    .install-block {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: .6rem .75rem;
+      font-size: .8rem;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+      position: relative;
+      white-space: pre-wrap;
+      word-break: break-all;
+      color: var(--text-muted);
+    }
+    .install-block code { color: var(--text); }
+    .copy-btn {
+      position: absolute;
+      top: .4rem;
+      right: .4rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: .2rem .45rem;
+      font-size: .75rem;
+      line-height: 1;
+    }
+    .copy-btn:hover { color: var(--text); border-color: var(--accent); }
+
+    .card-links { margin-top: .6rem; font-size: .82rem; display: flex; gap: 1rem; }
+
+    .empty {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .loading { text-align: center; padding: 4rem 1rem; color: var(--text-muted); }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: .8rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <h1><span>helm charts /</span> damoun</h1>
+    <nav class="header-links">
+      <a href="https://github.com/damoun/helm-charts">GitHub</a>
+      <a href="https://artifacthub.io/packages/search?repo=damoun">Artifact Hub</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="toolbar">
+    <input type="text" class="search-box" id="search" placeholder="Search charts…" autofocus>
+    <div class="chart-count" id="count"></div>
+  </div>
+  <div id="charts" class="charts">
+    <div class="loading" id="loading">Loading charts…</div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <code>helm repo add damoun https://charts.damoun.dev</code>
+  </div>
+</footer>
+
+<script>
+(async () => {
+  const REPO_URL = 'https://charts.damoun.dev';
+  const REPO_NAME = 'damoun';
+
+  const chartsEl = document.getElementById('charts');
+  const searchEl = document.getElementById('search');
+  const countEl = document.getElementById('count');
+
+  let entries = {};
+
+  try {
+    const res = await fetch('index.yaml');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const text = await res.text();
+    const index = jsyaml.load(text);
+    entries = index.entries || {};
+  } catch (e) {
+    chartsEl.innerHTML = `<div class="empty">Failed to load charts: ${e.message}</div>`;
+    return;
+  }
+
+  // Build chart data: sort by name, latest version first per chart
+  const charts = Object.keys(entries)
+    .sort()
+    .map(name => {
+      const versions = entries[name].sort((a, b) =>
+        new Date(b.created) - new Date(a.created)
+      );
+      return { name, versions, latest: versions[0] };
+    });
+
+  function render(filter) {
+    const q = (filter || '').toLowerCase();
+    const filtered = charts.filter(c =>
+      c.name.toLowerCase().includes(q) ||
+      (c.latest.description || '').toLowerCase().includes(q)
+    );
+
+    countEl.textContent = `${filtered.length} chart${filtered.length !== 1 ? 's' : ''} available`;
+
+    if (!filtered.length) {
+      chartsEl.innerHTML = `<div class="empty">No charts match "${filter}"</div>`;
+      return;
+    }
+
+    chartsEl.innerHTML = filtered.map(c => {
+      const v = c.latest;
+      const typeBadge = v.type === 'library'
+        ? '<span class="badge badge-library">library</span>'
+        : '<span class="badge badge-application">application</span>';
+
+      const versionOptions = c.versions.map(ver =>
+        `<option value="${ver.version}">${ver.version}${ver.appVersion ? ` (app: ${ver.appVersion})` : ''}</option>`
+      ).join('');
+
+      const maintainer = v.maintainers && v.maintainers[0]
+        ? v.maintainers[0].name
+        : '';
+
+      const installCmd = `helm repo add ${REPO_NAME} ${REPO_URL}\nhelm install ${v.name} ${REPO_NAME}/${v.name}`;
+
+      return `
+        <div class="card" data-chart="${c.name}">
+          <div class="card-top">
+            <span class="card-title">${v.name}</span>
+            ${typeBadge}
+          </div>
+          <div class="card-desc">${v.description || ''}</div>
+          <div class="card-meta">
+            <span><strong>Version:</strong>
+              <select class="version-select" data-chart="${c.name}">
+                ${versionOptions}
+              </select>
+            </span>
+            ${v.appVersion ? `<span><strong>App:</strong> ${v.appVersion}</span>` : ''}
+            ${maintainer ? `<span><strong>Maintainer:</strong> ${maintainer}</span>` : ''}
+          </div>
+          <div class="install-block" id="install-${c.name}"><code>${esc(installCmd)}</code><button class="copy-btn" data-cmd="${esc(installCmd, true)}">Copy</button></div>
+          <div class="card-links">
+            ${v.home ? `<a href="${v.home}">Source</a>` : ''}
+            ${v.urls && v.urls[0] ? `<a href="${v.urls[0]}">Download .tgz</a>` : ''}
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  function esc(str, attr) {
+    const s = str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    return attr ? s.replace(/"/g,'&quot;') : s;
+  }
+
+  // Search
+  searchEl.addEventListener('input', () => render(searchEl.value));
+
+  // Copy button
+  chartsEl.addEventListener('click', e => {
+    if (!e.target.classList.contains('copy-btn')) return;
+    const text = e.target.dataset.cmd
+      .replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"');
+    navigator.clipboard.writeText(text).then(() => {
+      e.target.textContent = 'Copied!';
+      setTimeout(() => e.target.textContent = 'Copy', 1500);
+    });
+  });
+
+  // Version select — update install command and download link
+  chartsEl.addEventListener('change', e => {
+    if (!e.target.classList.contains('version-select')) return;
+    const chartName = e.target.dataset.chart;
+    const selectedVersion = e.target.value;
+    const chart = charts.find(c => c.name === chartName);
+    if (!chart) return;
+    const ver = chart.versions.find(v => v.version === selectedVersion);
+    if (!ver) return;
+
+    const card = e.target.closest('.card');
+    const installCmd = `helm repo add ${REPO_NAME} ${REPO_URL}\nhelm install ${ver.name} ${REPO_NAME}/${ver.name} --version ${ver.version}`;
+    const block = card.querySelector('.install-block');
+    block.querySelector('code').textContent = installCmd;
+    block.querySelector('.copy-btn').dataset.cmd = esc(installCmd, true);
+
+    // Update app version display
+    const meta = card.querySelector('.card-meta');
+    const appSpan = meta.querySelector('[data-app]');
+    if (ver.appVersion) {
+      if (appSpan) appSpan.innerHTML = `<strong>App:</strong> ${ver.appVersion}`;
+      else {
+        const s = document.createElement('span');
+        s.dataset.app = '';
+        s.innerHTML = `<strong>App:</strong> ${ver.appVersion}`;
+        meta.appendChild(s);
+      }
+    }
+
+    // Update download link
+    const dlLink = card.querySelector('.card-links a[href$=".tgz"]');
+    if (dlLink && ver.urls && ver.urls[0]) dlLink.href = ver.urls[0];
+  });
+
+  render('');
+})();
+</script>
+</body>
+</html>
