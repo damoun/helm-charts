@@ -57,3 +57,17 @@ jobs:
           config: cr.yaml
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Merge twitch-exporter chart index
+        run: |
+          git checkout gh-pages
+          curl -sL -o /tmp/twitch-exporter-index.yaml \
+            https://damoun.github.io/twitch_exporter/index.yaml
+          yq eval-all '
+            select(fileIndex == 0).entries["twitch-exporter"] = select(fileIndex == 1).entries["twitch-exporter"]
+            | select(fileIndex == 0)
+          ' index.yaml /tmp/twitch-exporter-index.yaml > /tmp/merged-index.yaml
+          mv /tmp/merged-index.yaml index.yaml
+          git add index.yaml
+          git diff --staged --quiet || git commit -m "Merge twitch-exporter chart from damoun/twitch_exporter"
+          git push origin gh-pages
