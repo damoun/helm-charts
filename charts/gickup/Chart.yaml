@@ -2,14 +2,14 @@ apiVersion: v2
 name: gickup
 description: Gickup cron job Helm Chart
 type: application
-version: 1.11.0
+version: 1.12.0
 appVersion: "0.10.30"
 dependencies:
   - name: base
     repository: https://charts.damoun.dev
     tags:
       - damoun-base
-    version: 1.x.x
+    version: 1.1.2
 maintainers:
   - name: damoun
     email: damien@plenard.me
