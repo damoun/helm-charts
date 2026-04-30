@@ -2,14 +2,14 @@ apiVersion: v2
 name: omada-controller
 description: Omada software controller Helm Chart
 type: application
-version: 2.0.2
+version: 2.1.0
 appVersion: "5.9.31"
 dependencies:
   - name: base
     repository: https://charts.damoun.dev
     tags:
       - damoun-base
-    version: 1.x.x
+    version: 1.1.2
 maintainers:
   - name: damoun
     email: damien@plenard.me
