@@ -1,2170 +1,2241 @@
 apiVersion: v1
 entries:
   base:
-  - apiVersion: v2
-    appVersion: 1.1.1
-    created: "2023-04-11T15:56:35.059609509Z"
-    description: A Library Helm Chart for grouping base logic charts.
-    digest: ffeece88026d038390764bbde14ce3dc6fd0e9064837f16486868b07c0276ac5
-    home: https://github.com/damoun/helm-charts/tree/main/charts/base
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: base
-    type: library
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/base-1.1.2/base-1.1.2.tgz
-    version: 1.1.2
-  - apiVersion: v2
-    appVersion: 1.1.0
-    created: "2023-03-19T21:15:42.628822926Z"
-    description: A Library Helm Chart for grouping base logic charts.
-    digest: 90a62c64614628f96cf4d82d03be1aba349cca0ab108218712f9ccab12ccd04a
-    home: https://github.com/damoun/helm-charts/tree/main/charts/base
-    name: base
-    type: library
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/base-1.1.0/base-1.1.0.tgz
-    version: 1.1.0
-  - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2023-03-18T23:41:05.585908105Z"
-    description: A Library Helm Chart for grouping base logic charts.
-    digest: 9cc836b64fab9e5215e6ca7ba2451794ab6631546f7aef96cc9f8769fd4ef70d
-    home: https://github.com/damoun/helm-charts/tree/main/charts/base
-    name: base
-    type: library
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/base-1.0.0/base-1.0.0.tgz
-    version: 1.0.0
+    - apiVersion: v2
+      appVersion: 1.1.1
+      created: "2023-04-11T15:56:35.059609509Z"
+      description: A Library Helm Chart for grouping base logic charts.
+      digest: ffeece88026d038390764bbde14ce3dc6fd0e9064837f16486868b07c0276ac5
+      home: https://github.com/damoun/helm-charts/tree/main/charts/base
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: base
+      type: library
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/base-1.1.2/base-1.1.2.tgz
+      version: 1.1.2
+    - apiVersion: v2
+      appVersion: 1.1.0
+      created: "2023-03-19T21:15:42.628822926Z"
+      description: A Library Helm Chart for grouping base logic charts.
+      digest: 90a62c64614628f96cf4d82d03be1aba349cca0ab108218712f9ccab12ccd04a
+      home: https://github.com/damoun/helm-charts/tree/main/charts/base
+      name: base
+      type: library
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/base-1.1.0/base-1.1.0.tgz
+      version: 1.1.0
+    - apiVersion: v2
+      appVersion: 1.0.0
+      created: "2023-03-18T23:41:05.585908105Z"
+      description: A Library Helm Chart for grouping base logic charts.
+      digest: 9cc836b64fab9e5215e6ca7ba2451794ab6631546f7aef96cc9f8769fd4ef70d
+      home: https://github.com/damoun/helm-charts/tree/main/charts/base
+      name: base
+      type: library
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/base-1.0.0/base-1.0.0.tgz
+      version: 1.0.0
   cloudflared:
-  - apiVersion: v2
-    appVersion: 2024.5.0
-    created: "2024-06-11T07:47:36.015384389Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: aa58f4d0208b5c0951e0078a0ec4edb3ae55124334f42992ad43b1ff7e8c10f4
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.3.0/cloudflared-3.3.0.tgz
-    version: 3.3.0
-  - apiVersion: v2
-    appVersion: 2024.2.1
-    created: "2024-03-01T16:17:46.757221134Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: c29494af60272d93922cf7904432e85417c4aa57449634a957c93f50080c795d
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.2.0/cloudflared-3.2.0.tgz
-    version: 3.2.0
-  - apiVersion: v2
-    appVersion: 2024.1.5
-    created: "2024-01-30T12:19:04.249510943Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 41827d81a376778343d980295a573c06e30cae57865e3eb635326b27a6c952c3
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.1.0/cloudflared-3.1.0.tgz
-    version: 3.1.0
-  - apiVersion: v2
-    appVersion: 2023.10.0
-    created: "2023-11-24T23:33:07.895348791Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: d02a2308dd8cb708f1502f18b14adb621790ae7d52f3c2547666126811480826
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.0.5/cloudflared-3.0.5.tgz
-    version: 3.0.5
-  - apiVersion: v2
-    appVersion: 2023.10.0
-    created: "2023-11-24T22:49:35.230193876Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 8c5baf7ed8801c8cf3bda98be179384edd298f09c5d667a1de3ae7364ee2de04
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.0.4/cloudflared-3.0.4.tgz
-    version: 3.0.4
-  - apiVersion: v2
-    appVersion: 2023.10.0
-    created: "2023-11-24T22:44:15.245905369Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 3abd80f472aa02aa6799ee25d1fbca992610e0adbb887d5044926f81b460b3f0
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.0.3/cloudflared-3.0.3.tgz
-    version: 3.0.3
-  - apiVersion: v2
-    appVersion: 2023.10.0
-    created: "2023-11-24T22:31:25.803827689Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: b2daf9d0d23898b18dfb6db1a5b3597c973d197a4eef308ac1c78c4a2621b7c5
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.0.2/cloudflared-3.0.2.tgz
-    version: 3.0.2
-  - apiVersion: v2
-    appVersion: 2023.10.0
-    created: "2023-11-24T22:25:49.387374526Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 205240feb520be358dc4aa588c88c4ca9118ad0323db2c480695d5e09948ace6
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.0.1/cloudflared-3.0.1.tgz
-    version: 3.0.1
-  - apiVersion: v2
-    appVersion: 2023.10.0
-    created: "2023-11-24T21:23:43.107495076Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 9c8ff4c91737cc22f4df6d828d2141b127c9f5e7bb782f33fa8fc64587d3d493
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.0.0/cloudflared-3.0.0.tgz
-    version: 3.0.0
-  - apiVersion: v2
-    appVersion: 2023.10.0
-    created: "2023-11-24T16:28:54.401272695Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 92c71003e8a27f964869c925ca1a55301ee9b8b824a5d28635759beec3d03801
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-2.0.2/cloudflared-2.0.2.tgz
-    version: 2.0.2
-  - apiVersion: v2
-    appVersion: 2023.10.0
-    created: "2023-11-24T16:09:23.602671337Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 6c0a5b2603a3d14999b77867c068e5b26752af9d277196d6d4aa07362f530b0a
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-2.0.1/cloudflared-2.0.1.tgz
-    version: 2.0.1
-  - apiVersion: v2
-    appVersion: 2023.10.0
-    created: "2023-11-24T15:19:45.605497704Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: a4f63d64f532364fe613cb6216c49df58eff099655a49f6ba40fba2de7bd21ce
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-2.0.0/cloudflared-2.0.0.tgz
-    version: 2.0.0
-  - apiVersion: v2
-    appVersion: 2023.8.2
-    created: "2023-08-31T16:14:15.775544396Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: d87b971c87f4227e2c9fe0b52e45d8ddfe176c09d7822b8e853c4602ef24402c
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.15.0/cloudflared-1.15.0.tgz
-    version: 1.15.0
-  - apiVersion: v2
-    appVersion: 2023.8.1
-    created: "2023-08-28T10:13:15.45925787Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 0243c215283ae50385df9bc97bfec64be1722373a126ff11d074ecdd4c48d494
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.14.0/cloudflared-1.14.0.tgz
-    version: 1.14.0
-  - apiVersion: v2
-    appVersion: 2023.8.0
-    created: "2023-08-23T14:12:16.634066617Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 172cec166916b3309473e5e1353b3e69d24541c72bb14987eb4d1e9adcf06c97
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.13.0/cloudflared-1.13.0.tgz
-    version: 1.13.0
-  - apiVersion: v2
-    appVersion: 2023.7.3
-    created: "2023-07-26T17:12:31.514193669Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 990798ef0ee3de2e9642d9e14fedd7e820158d40f93a0b3240be758508c120e4
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.12.0/cloudflared-1.12.0.tgz
-    version: 1.12.0
-  - apiVersion: v2
-    appVersion: 2023.7.2
-    created: "2023-07-24T10:13:01.553749327Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: c0c2c565479d1678bfc35a55bff52b00f8c1cfb12cfe3c3ee672df479eeae6a8
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.11.0/cloudflared-1.11.0.tgz
-    version: 1.11.0
-  - apiVersion: v2
-    appVersion: 2023.7.1
-    created: "2023-07-17T09:11:35.893458812Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 1e238bba1251a1fb6b28e584a24f6a5069880b86667c104f35402683fdd28ac1
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.10.0/cloudflared-1.10.0.tgz
-    version: 1.10.0
-  - apiVersion: v2
-    appVersion: 2023.7.0
-    created: "2023-07-11T21:11:45.309663563Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 3d8e2cfae1de8d3caeccf8283ef02542ee666dacac3c2279d99a474a107a43b1
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.9.0/cloudflared-1.9.0.tgz
-    version: 1.9.0
-  - apiVersion: v2
-    appVersion: 2023.6.1
-    created: "2023-06-20T11:10:10.996634706Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 64e8574da822845a0a14ee93e244c25ad8983f6e677c5c2d4628a3f8375a439a
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.8.0/cloudflared-1.8.0.tgz
-    version: 1.8.0
-  - apiVersion: v2
-    appVersion: 2023.6.0
-    created: "2023-06-15T16:47:49.215946211Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 833ec809fd14753ca0f33c9174a7e34b1127602e141878c4302458e308dca59d
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.7.0/cloudflared-1.7.0.tgz
-    version: 1.7.0
-  - apiVersion: v2
-    appVersion: 2023.5.1
-    created: "2023-05-23T20:09:34.287637092Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 02a8a312300c9fb8f6734a9c82a1a57813b4cbc8909d970ca102f6fee2ae13fb
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.6.0/cloudflared-1.6.0.tgz
-    version: 1.6.0
-  - apiVersion: v2
-    appVersion: 2023.5.0
-    created: "2023-05-02T17:33:59.236539793Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 404c03438de5f502d9cb0fdce4719ce2b8f125f4941cb9606512faba495a309c
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.5.0/cloudflared-1.5.0.tgz
-    version: 1.5.0
-  - apiVersion: v2
-    appVersion: 2023.4.2
-    created: "2023-04-25T06:25:33.436891713Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 4c63418a1f3aaf3d46d8650c192fd566f09ffccfc14fc2f86c661538bafea196
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.4.0/cloudflared-1.4.0.tgz
-    version: 1.4.0
-  - apiVersion: v2
-    appVersion: 2023.4.1
-    created: "2023-04-17T20:16:04.743606997Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: fd8eaa204bee62444f759dae105424229430ff633bec2eb61a6e3f6297146929
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.3.0/cloudflared-1.3.0.tgz
-    version: 1.3.0
-  - apiVersion: v2
-    appVersion: 2023.4.0
-    created: "2023-04-11T16:55:31.070047773Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 6a133f2c42809104bb7e9beaa08c1323b882e73a066e9a0f00edff2dcd2710a1
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.2.0/cloudflared-1.2.0.tgz
-    version: 1.2.0
-  - apiVersion: v2
-    appVersion: 2023.3.1
-    created: "2023-04-11T16:51:53.39227084Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 162e9e465cd78625e30124f837bfa0cb4b2c1f9123f81b4d20aecf26fddd2c43
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.1.7/cloudflared-1.1.7.tgz
-    version: 1.1.7
-  - apiVersion: v2
-    appVersion: 2023.3.1
-    created: "2023-04-11T15:56:35.253270451Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 09c14797859d361bf9108d59cd831001a43bd2d303ed1cc3d62946357f2d8d93
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.1.6/cloudflared-1.1.6.tgz
-    version: 1.1.6
-  - apiVersion: v2
-    appVersion: 2023.3.1
-    created: "2023-04-04T16:07:55.817862912Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 63d543a718d7604ce63f064154f191bb9516760e87d88ae5672ef03957feed5b
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.1.5/cloudflared-1.1.5.tgz
-    version: 1.1.5
-  - apiVersion: v2
-    appVersion: 2023.3.1
-    created: "2023-04-04T15:30:52.862389482Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 8c5b0a55da6b8f848319c1a504a7382dd6f8e42d2668402d0ed509eabda1bb2d
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.1.4/cloudflared-1.1.4.tgz
-    version: 1.1.4
-  - apiVersion: v2
-    appVersion: 2023.3.1
-    created: "2023-04-03T21:42:14.933473378Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 95869d4e26f4cd5c4134879734f3bd403bb1666a33f81722c40d0d0f8e34c725
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.1.2/cloudflared-1.1.2.tgz
-    version: 1.1.2
-  - apiVersion: v2
-    appVersion: 2023.3.1
-    created: "2023-04-02T00:18:12.746767857Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 9211ac8ec7c7e0a61ee43504f19563727e4d07256c7e3ed6e9b8566d02e74cd7
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.1.0/cloudflared-1.1.0.tgz
-    version: 1.1.0
-  - apiVersion: v2
-    appVersion: 2023.3.1
-    created: "2023-04-01T23:19:41.81986126Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: da0f92941ffc08f5e58d59d2256cb14c8a8d8e9cfe358803f6ce8c73e35539cf
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.0.1/cloudflared-1.0.1.tgz
-    version: 1.0.1
-  - apiVersion: v2
-    appVersion: 2023.3.1
-    created: "2023-04-01T22:45:56.269243449Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Cloudflared tunnel Helm Chart
-    digest: 3ccc0e87708e7617b2f2a8c6cc21350d2fe5d5cb5568dcf471384c11339ff037
-    name: cloudflared
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.0.0/cloudflared-1.0.0.tgz
-    version: 1.0.0
+    - apiVersion: v2
+      appVersion: 2024.5.0
+      created: "2024-06-11T07:47:36.015384389Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: aa58f4d0208b5c0951e0078a0ec4edb3ae55124334f42992ad43b1ff7e8c10f4
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.3.0/cloudflared-3.3.0.tgz
+      version: 3.3.0
+    - apiVersion: v2
+      appVersion: 2024.2.1
+      created: "2024-03-01T16:17:46.757221134Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: c29494af60272d93922cf7904432e85417c4aa57449634a957c93f50080c795d
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.2.0/cloudflared-3.2.0.tgz
+      version: 3.2.0
+    - apiVersion: v2
+      appVersion: 2024.1.5
+      created: "2024-01-30T12:19:04.249510943Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 41827d81a376778343d980295a573c06e30cae57865e3eb635326b27a6c952c3
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.1.0/cloudflared-3.1.0.tgz
+      version: 3.1.0
+    - apiVersion: v2
+      appVersion: 2023.10.0
+      created: "2023-11-24T23:33:07.895348791Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: d02a2308dd8cb708f1502f18b14adb621790ae7d52f3c2547666126811480826
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.0.5/cloudflared-3.0.5.tgz
+      version: 3.0.5
+    - apiVersion: v2
+      appVersion: 2023.10.0
+      created: "2023-11-24T22:49:35.230193876Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 8c5baf7ed8801c8cf3bda98be179384edd298f09c5d667a1de3ae7364ee2de04
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.0.4/cloudflared-3.0.4.tgz
+      version: 3.0.4
+    - apiVersion: v2
+      appVersion: 2023.10.0
+      created: "2023-11-24T22:44:15.245905369Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 3abd80f472aa02aa6799ee25d1fbca992610e0adbb887d5044926f81b460b3f0
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.0.3/cloudflared-3.0.3.tgz
+      version: 3.0.3
+    - apiVersion: v2
+      appVersion: 2023.10.0
+      created: "2023-11-24T22:31:25.803827689Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: b2daf9d0d23898b18dfb6db1a5b3597c973d197a4eef308ac1c78c4a2621b7c5
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.0.2/cloudflared-3.0.2.tgz
+      version: 3.0.2
+    - apiVersion: v2
+      appVersion: 2023.10.0
+      created: "2023-11-24T22:25:49.387374526Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 205240feb520be358dc4aa588c88c4ca9118ad0323db2c480695d5e09948ace6
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.0.1/cloudflared-3.0.1.tgz
+      version: 3.0.1
+    - apiVersion: v2
+      appVersion: 2023.10.0
+      created: "2023-11-24T21:23:43.107495076Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 9c8ff4c91737cc22f4df6d828d2141b127c9f5e7bb782f33fa8fc64587d3d493
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-3.0.0/cloudflared-3.0.0.tgz
+      version: 3.0.0
+    - apiVersion: v2
+      appVersion: 2023.10.0
+      created: "2023-11-24T16:28:54.401272695Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 92c71003e8a27f964869c925ca1a55301ee9b8b824a5d28635759beec3d03801
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-2.0.2/cloudflared-2.0.2.tgz
+      version: 2.0.2
+    - apiVersion: v2
+      appVersion: 2023.10.0
+      created: "2023-11-24T16:09:23.602671337Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 6c0a5b2603a3d14999b77867c068e5b26752af9d277196d6d4aa07362f530b0a
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-2.0.1/cloudflared-2.0.1.tgz
+      version: 2.0.1
+    - apiVersion: v2
+      appVersion: 2023.10.0
+      created: "2023-11-24T15:19:45.605497704Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: a4f63d64f532364fe613cb6216c49df58eff099655a49f6ba40fba2de7bd21ce
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-2.0.0/cloudflared-2.0.0.tgz
+      version: 2.0.0
+    - apiVersion: v2
+      appVersion: 2023.8.2
+      created: "2023-08-31T16:14:15.775544396Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: d87b971c87f4227e2c9fe0b52e45d8ddfe176c09d7822b8e853c4602ef24402c
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.15.0/cloudflared-1.15.0.tgz
+      version: 1.15.0
+    - apiVersion: v2
+      appVersion: 2023.8.1
+      created: "2023-08-28T10:13:15.45925787Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 0243c215283ae50385df9bc97bfec64be1722373a126ff11d074ecdd4c48d494
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.14.0/cloudflared-1.14.0.tgz
+      version: 1.14.0
+    - apiVersion: v2
+      appVersion: 2023.8.0
+      created: "2023-08-23T14:12:16.634066617Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 172cec166916b3309473e5e1353b3e69d24541c72bb14987eb4d1e9adcf06c97
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.13.0/cloudflared-1.13.0.tgz
+      version: 1.13.0
+    - apiVersion: v2
+      appVersion: 2023.7.3
+      created: "2023-07-26T17:12:31.514193669Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 990798ef0ee3de2e9642d9e14fedd7e820158d40f93a0b3240be758508c120e4
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.12.0/cloudflared-1.12.0.tgz
+      version: 1.12.0
+    - apiVersion: v2
+      appVersion: 2023.7.2
+      created: "2023-07-24T10:13:01.553749327Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: c0c2c565479d1678bfc35a55bff52b00f8c1cfb12cfe3c3ee672df479eeae6a8
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.11.0/cloudflared-1.11.0.tgz
+      version: 1.11.0
+    - apiVersion: v2
+      appVersion: 2023.7.1
+      created: "2023-07-17T09:11:35.893458812Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 1e238bba1251a1fb6b28e584a24f6a5069880b86667c104f35402683fdd28ac1
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.10.0/cloudflared-1.10.0.tgz
+      version: 1.10.0
+    - apiVersion: v2
+      appVersion: 2023.7.0
+      created: "2023-07-11T21:11:45.309663563Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 3d8e2cfae1de8d3caeccf8283ef02542ee666dacac3c2279d99a474a107a43b1
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.9.0/cloudflared-1.9.0.tgz
+      version: 1.9.0
+    - apiVersion: v2
+      appVersion: 2023.6.1
+      created: "2023-06-20T11:10:10.996634706Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 64e8574da822845a0a14ee93e244c25ad8983f6e677c5c2d4628a3f8375a439a
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.8.0/cloudflared-1.8.0.tgz
+      version: 1.8.0
+    - apiVersion: v2
+      appVersion: 2023.6.0
+      created: "2023-06-15T16:47:49.215946211Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 833ec809fd14753ca0f33c9174a7e34b1127602e141878c4302458e308dca59d
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.7.0/cloudflared-1.7.0.tgz
+      version: 1.7.0
+    - apiVersion: v2
+      appVersion: 2023.5.1
+      created: "2023-05-23T20:09:34.287637092Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 02a8a312300c9fb8f6734a9c82a1a57813b4cbc8909d970ca102f6fee2ae13fb
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.6.0/cloudflared-1.6.0.tgz
+      version: 1.6.0
+    - apiVersion: v2
+      appVersion: 2023.5.0
+      created: "2023-05-02T17:33:59.236539793Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 404c03438de5f502d9cb0fdce4719ce2b8f125f4941cb9606512faba495a309c
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.5.0/cloudflared-1.5.0.tgz
+      version: 1.5.0
+    - apiVersion: v2
+      appVersion: 2023.4.2
+      created: "2023-04-25T06:25:33.436891713Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 4c63418a1f3aaf3d46d8650c192fd566f09ffccfc14fc2f86c661538bafea196
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.4.0/cloudflared-1.4.0.tgz
+      version: 1.4.0
+    - apiVersion: v2
+      appVersion: 2023.4.1
+      created: "2023-04-17T20:16:04.743606997Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: fd8eaa204bee62444f759dae105424229430ff633bec2eb61a6e3f6297146929
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.3.0/cloudflared-1.3.0.tgz
+      version: 1.3.0
+    - apiVersion: v2
+      appVersion: 2023.4.0
+      created: "2023-04-11T16:55:31.070047773Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 6a133f2c42809104bb7e9beaa08c1323b882e73a066e9a0f00edff2dcd2710a1
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.2.0/cloudflared-1.2.0.tgz
+      version: 1.2.0
+    - apiVersion: v2
+      appVersion: 2023.3.1
+      created: "2023-04-11T16:51:53.39227084Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 162e9e465cd78625e30124f837bfa0cb4b2c1f9123f81b4d20aecf26fddd2c43
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.1.7/cloudflared-1.1.7.tgz
+      version: 1.1.7
+    - apiVersion: v2
+      appVersion: 2023.3.1
+      created: "2023-04-11T15:56:35.253270451Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 09c14797859d361bf9108d59cd831001a43bd2d303ed1cc3d62946357f2d8d93
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.1.6/cloudflared-1.1.6.tgz
+      version: 1.1.6
+    - apiVersion: v2
+      appVersion: 2023.3.1
+      created: "2023-04-04T16:07:55.817862912Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 63d543a718d7604ce63f064154f191bb9516760e87d88ae5672ef03957feed5b
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.1.5/cloudflared-1.1.5.tgz
+      version: 1.1.5
+    - apiVersion: v2
+      appVersion: 2023.3.1
+      created: "2023-04-04T15:30:52.862389482Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 8c5b0a55da6b8f848319c1a504a7382dd6f8e42d2668402d0ed509eabda1bb2d
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.1.4/cloudflared-1.1.4.tgz
+      version: 1.1.4
+    - apiVersion: v2
+      appVersion: 2023.3.1
+      created: "2023-04-03T21:42:14.933473378Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 95869d4e26f4cd5c4134879734f3bd403bb1666a33f81722c40d0d0f8e34c725
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.1.2/cloudflared-1.1.2.tgz
+      version: 1.1.2
+    - apiVersion: v2
+      appVersion: 2023.3.1
+      created: "2023-04-02T00:18:12.746767857Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 9211ac8ec7c7e0a61ee43504f19563727e4d07256c7e3ed6e9b8566d02e74cd7
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.1.0/cloudflared-1.1.0.tgz
+      version: 1.1.0
+    - apiVersion: v2
+      appVersion: 2023.3.1
+      created: "2023-04-01T23:19:41.81986126Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: da0f92941ffc08f5e58d59d2256cb14c8a8d8e9cfe358803f6ce8c73e35539cf
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.0.1/cloudflared-1.0.1.tgz
+      version: 1.0.1
+    - apiVersion: v2
+      appVersion: 2023.3.1
+      created: "2023-04-01T22:45:56.269243449Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Cloudflared tunnel Helm Chart
+      digest: 3ccc0e87708e7617b2f2a8c6cc21350d2fe5d5cb5568dcf471384c11339ff037
+      name: cloudflared
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/cloudflared-1.0.0/cloudflared-1.0.0.tgz
+      version: 1.0.0
   gickup:
-  - apiVersion: v2
-    appVersion: 0.10.47
-    created: "2026-11-11T08:56:46.808087456Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Gickup cron job Helm Chart
-    digest: 5e434d91beb1e6dcb7297ee02726652b295ad028d3cf42c222842345538b19af
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: gickup
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/gickup-1.12.0/gickup-1.12.0.tgz
-    version: 1.12.0
-  - apiVersion: v2
-    appVersion: 0.10.30
-    created: "2026-02-10T20:45:23.5464806Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Gickup cron job Helm Chart
-    digest: 16cc8a594f62c3a0908e29fd97a0e36f927b885f82e3473f7a887af9346c754c
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: gickup
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/gickup-1.11.0/gickup-1.11.0.tgz
-    version: 1.11.0
-  - apiVersion: v2
-    appVersion: 0.10.28
-    created: "2024-03-01T16:16:37.298360137Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Gickup cron job Helm Chart
-    digest: bbf0443af8312d569945ff36e1d939d026b5d3ab189348d2fc967b9deb5fc437
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: gickup
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/gickup-1.10.0/gickup-1.10.0.tgz
-    version: 1.10.0
-  - apiVersion: v2
-    appVersion: 0.10.24
-    created: "2023-12-21T12:02:04.239608636Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Gickup cron job Helm Chart
-    digest: 89418c04e526c278458a4065e2399a59606565d7974378f27c28d6aec19bc955
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: gickup
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/gickup-1.9.0/gickup-1.9.0.tgz
-    version: 1.9.0
-  - apiVersion: v2
-    appVersion: 0.10.23
-    created: "2023-12-03T15:15:48.242574279Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Gickup cron job Helm Chart
-    digest: a67ee94753c5363cf4d13ec7829b019b3991229e8272116e84c83f93918b422e
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: gickup
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/gickup-1.8.0/gickup-1.8.0.tgz
-    version: 1.8.0
-  - apiVersion: v2
-    appVersion: 0.10.18
-    created: "2023-09-05T08:34:28.015637013Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Gickup cron job Helm Chart
-    digest: c8612b05e86d0ffd5c71019743cc559c516efe4a8db3a9e9ba3ff2a676afd922
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: gickup
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/gickup-1.5.0/gickup-1.5.0.tgz
-    version: 1.5.0
-  - apiVersion: v2
-    appVersion: 0.10.17
-    created: "2023-06-15T09:00:41.209001103Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Gickup cron job Helm Chart
-    digest: 9371b81f859b27781e3cc09c588f71553198cd966062a1a815e4fff6e39e4fc9
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: gickup
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/gickup-1.4.0/gickup-1.4.0.tgz
-    version: 1.4.0
-  - apiVersion: v2
-    appVersion: 0.10.15
-    created: "2023-05-02T17:33:59.357419561Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Gickup cron job Helm Chart
-    digest: b46bcfdde375bfdbbd5b4cc39e49214d7ff28de2d15988819ea714515903c425
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: gickup
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/gickup-1.3.0/gickup-1.3.0.tgz
-    version: 1.3.0
-  - apiVersion: v2
-    appVersion: 0.10.14
-    created: "2023-04-11T16:51:53.554665807Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Gickup cron job Helm Chart
-    digest: 018441e46bb672249baf1f534264d6d1b2526f42baa8c59b9e5aca46bb1c31c7
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: gickup
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/gickup-1.2.2/gickup-1.2.2.tgz
-    version: 1.2.2
-  - apiVersion: v2
-    appVersion: 0.10.14
-    created: "2023-04-11T15:56:35.465644106Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Gickup cron job Helm Chart
-    digest: 19e6b84d8d4521796b6710da834945ac80c0871d3f21270fe294d3e9f53fb495
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: gickup
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/gickup-1.2.1/gickup-1.2.1.tgz
-    version: 1.2.1
-  - apiVersion: v2
-    appVersion: 0.10.14
-    created: "2023-03-27T23:14:30.440701774Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Gickup cron job Helm Chart
-    digest: eef29570a6c5bbad0509c8cdcaa39746d3b67d40487e55518cd5c8ceddee1793
-    name: gickup
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/gickup-1.2.0/gickup-1.2.0.tgz
-    version: 1.2.0
-  - apiVersion: v2
-    appVersion: 0.10.14
-    created: "2023-03-27T22:57:44.549814518Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Gickup cron job Helm Chart
-    digest: 1642cd8b6864bb775b20b1a3c8e3f3b42f8fc519c8282b43fd99896fdbf29551
-    name: gickup
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/gickup-1.1.0/gickup-1.1.0.tgz
-    version: 1.1.0
-  - apiVersion: v2
-    appVersion: 0.10.14
-    created: "2023-03-19T00:21:11.637679297Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Gickup cron job Helm Chart
-    digest: ade02a4130d490b58160d81d68d0356019c16d541f10b1c66d1c1abd4d04c44f
-    name: gickup
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/gickup-1.0.5/gickup-1.0.5.tgz
-    version: 1.0.5
-  - apiVersion: v2
-    appVersion: 0.10.14
-    created: "2023-03-18T14:31:56.410916204Z"
-    description: Gickup helm chart
-    digest: 74e98b6751b7bb89eda217190a1047b2fc7fd285b0d135d43df8c71578b680d7
-    name: gickup
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/gickup-0.1.0/gickup-0.1.0.tgz
-    version: 0.1.0
+    - apiVersion: v2
+      appVersion: 0.10.47
+      created: "2026-11-11T08:56:46.808087456Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Gickup cron job Helm Chart
+      digest: 5e434d91beb1e6dcb7297ee02726652b295ad028d3cf42c222842345538b19af
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: gickup
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/gickup-1.12.0/gickup-1.12.0.tgz
+      version: 1.12.0
+    - apiVersion: v2
+      appVersion: 0.10.30
+      created: "2026-02-10T20:45:23.5464806Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Gickup cron job Helm Chart
+      digest: 16cc8a594f62c3a0908e29fd97a0e36f927b885f82e3473f7a887af9346c754c
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: gickup
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/gickup-1.11.0/gickup-1.11.0.tgz
+      version: 1.11.0
+    - apiVersion: v2
+      appVersion: 0.10.28
+      created: "2024-03-01T16:16:37.298360137Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Gickup cron job Helm Chart
+      digest: bbf0443af8312d569945ff36e1d939d026b5d3ab189348d2fc967b9deb5fc437
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: gickup
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/gickup-1.10.0/gickup-1.10.0.tgz
+      version: 1.10.0
+    - apiVersion: v2
+      appVersion: 0.10.24
+      created: "2023-12-21T12:02:04.239608636Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Gickup cron job Helm Chart
+      digest: 89418c04e526c278458a4065e2399a59606565d7974378f27c28d6aec19bc955
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: gickup
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/gickup-1.9.0/gickup-1.9.0.tgz
+      version: 1.9.0
+    - apiVersion: v2
+      appVersion: 0.10.23
+      created: "2023-12-03T15:15:48.242574279Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Gickup cron job Helm Chart
+      digest: a67ee94753c5363cf4d13ec7829b019b3991229e8272116e84c83f93918b422e
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: gickup
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/gickup-1.8.0/gickup-1.8.0.tgz
+      version: 1.8.0
+    - apiVersion: v2
+      appVersion: 0.10.18
+      created: "2023-09-05T08:34:28.015637013Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Gickup cron job Helm Chart
+      digest: c8612b05e86d0ffd5c71019743cc559c516efe4a8db3a9e9ba3ff2a676afd922
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: gickup
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/gickup-1.5.0/gickup-1.5.0.tgz
+      version: 1.5.0
+    - apiVersion: v2
+      appVersion: 0.10.17
+      created: "2023-06-15T09:00:41.209001103Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Gickup cron job Helm Chart
+      digest: 9371b81f859b27781e3cc09c588f71553198cd966062a1a815e4fff6e39e4fc9
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: gickup
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/gickup-1.4.0/gickup-1.4.0.tgz
+      version: 1.4.0
+    - apiVersion: v2
+      appVersion: 0.10.15
+      created: "2023-05-02T17:33:59.357419561Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Gickup cron job Helm Chart
+      digest: b46bcfdde375bfdbbd5b4cc39e49214d7ff28de2d15988819ea714515903c425
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: gickup
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/gickup-1.3.0/gickup-1.3.0.tgz
+      version: 1.3.0
+    - apiVersion: v2
+      appVersion: 0.10.14
+      created: "2023-04-11T16:51:53.554665807Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Gickup cron job Helm Chart
+      digest: 018441e46bb672249baf1f534264d6d1b2526f42baa8c59b9e5aca46bb1c31c7
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: gickup
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/gickup-1.2.2/gickup-1.2.2.tgz
+      version: 1.2.2
+    - apiVersion: v2
+      appVersion: 0.10.14
+      created: "2023-04-11T15:56:35.465644106Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Gickup cron job Helm Chart
+      digest: 19e6b84d8d4521796b6710da834945ac80c0871d3f21270fe294d3e9f53fb495
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: gickup
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/gickup-1.2.1/gickup-1.2.1.tgz
+      version: 1.2.1
+    - apiVersion: v2
+      appVersion: 0.10.14
+      created: "2023-03-27T23:14:30.440701774Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Gickup cron job Helm Chart
+      digest: eef29570a6c5bbad0509c8cdcaa39746d3b67d40487e55518cd5c8ceddee1793
+      name: gickup
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/gickup-1.2.0/gickup-1.2.0.tgz
+      version: 1.2.0
+    - apiVersion: v2
+      appVersion: 0.10.14
+      created: "2023-03-27T22:57:44.549814518Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Gickup cron job Helm Chart
+      digest: 1642cd8b6864bb775b20b1a3c8e3f3b42f8fc519c8282b43fd99896fdbf29551
+      name: gickup
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/gickup-1.1.0/gickup-1.1.0.tgz
+      version: 1.1.0
+    - apiVersion: v2
+      appVersion: 0.10.14
+      created: "2023-03-19T00:21:11.637679297Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Gickup cron job Helm Chart
+      digest: ade02a4130d490b58160d81d68d0356019c16d541f10b1c66d1c1abd4d04c44f
+      name: gickup
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/gickup-1.0.5/gickup-1.0.5.tgz
+      version: 1.0.5
+    - apiVersion: v2
+      appVersion: 0.10.14
+      created: "2023-03-18T14:31:56.410916204Z"
+      description: Gickup helm chart
+      digest: 74e98b6751b7bb89eda217190a1047b2fc7fd285b0d135d43df8c71578b680d7
+      name: gickup
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/gickup-0.1.0/gickup-0.1.0.tgz
+      version: 0.1.0
   home-assistant:
-  - apiVersion: v2
-    appVersion: 2023.11.3
-    created: "2023-11-22T23:02:52.508902678Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Open source home automation that puts local control and privacy first.
-    digest: 2b94deafa27afd73b4075333bbfc31cb69b9227202a3c2e22fb8c49431b0122d
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-1.1.0/home-assistant-1.1.0.tgz
-    version: 1.1.0
-  - apiVersion: v2
-    appVersion: 2023.11.2
-    created: "2023-11-14T12:14:06.406950249Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Open source home automation that puts local control and privacy first.
-    digest: 12415cb7fddaa28680260e5bc6943ff03f24f47a7ce4ca2b518f3a55bb22f451
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-1.0.4/home-assistant-1.0.4.tgz
-    version: 1.0.4
-  - apiVersion: v2
-    appVersion: 2023.11.2
-    created: "2023-11-14T09:02:46.034998759Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Open source home automation that puts local control and privacy first.
-    digest: 29a11a3eeefe74fbc7dfcf67c3e30a9575d8e82cd552f646bbcdc245676087bd
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-1.0.3/home-assistant-1.0.3.tgz
-    version: 1.0.3
-  - apiVersion: v2
-    appVersion: 2023.11.2
-    created: "2023-11-13T23:03:49.627209016Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Open source home automation that puts local control and privacy first.
-    digest: 29724ea6995f6dd02b1d7ea330212a8a3b79414a953212f65c7ba2a76ff67747
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-1.0.2/home-assistant-1.0.2.tgz
-    version: 1.0.2
-  - apiVersion: v2
-    appVersion: 2023.11.2
-    created: "2023-11-13T22:55:11.125644626Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Open source home automation that puts local control and privacy first.
-    digest: 6135b2c904913d799af314523d7d2194a3600cdec3a0c290f250dbbc4cbb5d41
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-1.0.1/home-assistant-1.0.1.tgz
-    version: 1.0.1
-  - apiVersion: v2
-    appVersion: 2023.11.2
-    created: "2023-11-13T22:02:18.43037266Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Open source home automation that puts local control and privacy first.
-    digest: 5ba5640b9b3299bb7889e1b12dd07d451c1ce14723bf70a8c0136c94d9bfa077
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-1.0.0/home-assistant-1.0.0.tgz
-    version: 1.0.0
-  - apiVersion: v2
-    appVersion: 2023.11.1
-    created: "2023-11-04T17:29:22.435860148Z"
-    description: Home assistant home automation kubernetes helm chart
-    digest: 754f47f4711a8fbf1114d08f71593f56cce5edb9c2df018c7adb7118cd2e47b6
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.17.0/home-assistant-0.17.0.tgz
-    version: 0.17.0
-  - apiVersion: v2
-    appVersion: 2023.9.1
-    created: "2023-09-11T12:20:23.518079269Z"
-    description: Home assistant home automation kubernetes helm chart
-    digest: 9e4fca68ea48478c4f9d7fdf4918193d8c4ee19afab1ddb8cf922a48a8399fce
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.12.0/home-assistant-0.12.0.tgz
-    version: 0.12.0
-  - apiVersion: v2
-    appVersion: 2023.6.3
-    created: "2023-06-24T08:32:35.03461245Z"
-    description: Home assistant home automation kubernetes helm chart
-    digest: 0826e563851579744a8812d1908cd27636331ef247f92b349671d05634601cf0
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.11.0/home-assistant-0.11.0.tgz
-    version: 0.11.0
-  - apiVersion: v2
-    appVersion: 2023.6.2
-    created: "2023-06-15T09:01:02.763569254Z"
-    description: Home assistant home automation kubernetes helm chart
-    digest: 091c1c531b7da36422fda2ff7434afef66805be2c3b1ec710cf95f86b333daf7
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.10.0/home-assistant-0.10.0.tgz
-    version: 0.10.0
-  - apiVersion: v2
-    appVersion: 2023.5.4
-    created: "2023-05-25T10:30:28.91939223Z"
-    description: Home assistant home automation kubernetes helm chart
-    digest: af8c3a67e3578112561110e5547bfc6099b58cbb9671a8f538222a2be2ee11ef
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.9.0/home-assistant-0.9.0.tgz
-    version: 0.9.0
-  - apiVersion: v2
-    appVersion: 2023.5.3
-    created: "2023-05-18T20:34:55.113105678Z"
-    description: Home assistant home automation kubernetes helm chart
-    digest: 4665aedb45f19b08162f62067cd766ce49cb4f81344561de9e481e161b8d92f8
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.8.0/home-assistant-0.8.0.tgz
-    version: 0.8.0
-  - apiVersion: v2
-    appVersion: 2023.5.2
-    created: "2023-05-06T11:54:23.709430424Z"
-    description: Home assistant home automation kubernetes helm chart
-    digest: 2fe5e861afb7ba6ae27acfefe549aba338852867579a8e05ca22bc153e3f348f
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.7.0/home-assistant-0.7.0.tgz
-    version: 0.7.0
-  - apiVersion: v2
-    appVersion: 2023.5.1
-    created: "2023-05-05T07:41:00.608235237Z"
-    description: Home assistant home automation kubernetes helm chart
-    digest: 4b0945d70399d6c4dd00c9af2cfb7021cd7b3865b9832bf796143ac497578619
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.6.0/home-assistant-0.6.0.tgz
-    version: 0.6.0
-  - apiVersion: v2
-    appVersion: 2023.5.0
-    created: "2023-05-04T18:35:25.642937842Z"
-    description: Home assistant home automation kubernetes helm chart
-    digest: 792dbc915ee44713cd0d61fdb09a9d8c8f331f420725fdee0001b770d5970438
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.5.0/home-assistant-0.5.0.tgz
-    version: 0.5.0
-  - apiVersion: v2
-    appVersion: 2023.4.6
-    created: "2023-04-22T14:41:49.899691698Z"
-    description: Home assistant home automation kubernetes helm chart
-    digest: 5b64e944b6fd797978b847034756f4d6445a985e2d14ffbfc2a59b14ebd79110
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.4.0/home-assistant-0.4.0.tgz
-    version: 0.4.0
-  - apiVersion: v2
-    appVersion: 2023.4.5
-    created: "2023-04-18T06:26:37.988768816Z"
-    description: Home assistant home automation kubernetes helm chart
-    digest: 14ebb0ed5fa612897ce980c36c7ea84225a14ba132f11efdd56423256e046c4b
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.3.0/home-assistant-0.3.0.tgz
-    version: 0.3.0
-  - apiVersion: v2
-    appVersion: 2023.4.4
-    created: "2023-04-13T19:59:42.30905782Z"
-    description: Home assistant home automation kubernetes helm chart
-    digest: 0058004235a1493fa9ecfac410c8d68207425408fd4ce6611f644f6fbb474092
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.2.0/home-assistant-0.2.0.tgz
-    version: 0.2.0
-  - apiVersion: v2
-    appVersion: 2023.3.0
-    created: "2023-04-11T15:56:35.68277424Z"
-    description: Home assistant home automation kubernetes helm chart
-    digest: 13f2328526d1f2f8efb2aca7b6c9e90febed30bbcd6e1fe7f87751273b44d5aa
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.1.1/home-assistant-0.1.1.tgz
-    version: 0.1.1
-  - apiVersion: v2
-    appVersion: 2023.3.0
-    created: "2023-03-18T14:31:56.547808838Z"
-    description: Home assistant home automation kubernetes helm chart
-    digest: 0e231a1be236da56a69e92c889814718074fe43a1b40731ee80a47448377c592
-    name: home-assistant
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.1.0/home-assistant-0.1.0.tgz
-    version: 0.1.0
+    - apiVersion: v2
+      appVersion: 2023.11.3
+      created: "2023-11-22T23:02:52.508902678Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Open source home automation that puts local control and privacy first.
+      digest: 2b94deafa27afd73b4075333bbfc31cb69b9227202a3c2e22fb8c49431b0122d
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-1.1.0/home-assistant-1.1.0.tgz
+      version: 1.1.0
+    - apiVersion: v2
+      appVersion: 2023.11.2
+      created: "2023-11-14T12:14:06.406950249Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Open source home automation that puts local control and privacy first.
+      digest: 12415cb7fddaa28680260e5bc6943ff03f24f47a7ce4ca2b518f3a55bb22f451
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-1.0.4/home-assistant-1.0.4.tgz
+      version: 1.0.4
+    - apiVersion: v2
+      appVersion: 2023.11.2
+      created: "2023-11-14T09:02:46.034998759Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Open source home automation that puts local control and privacy first.
+      digest: 29a11a3eeefe74fbc7dfcf67c3e30a9575d8e82cd552f646bbcdc245676087bd
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-1.0.3/home-assistant-1.0.3.tgz
+      version: 1.0.3
+    - apiVersion: v2
+      appVersion: 2023.11.2
+      created: "2023-11-13T23:03:49.627209016Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Open source home automation that puts local control and privacy first.
+      digest: 29724ea6995f6dd02b1d7ea330212a8a3b79414a953212f65c7ba2a76ff67747
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-1.0.2/home-assistant-1.0.2.tgz
+      version: 1.0.2
+    - apiVersion: v2
+      appVersion: 2023.11.2
+      created: "2023-11-13T22:55:11.125644626Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Open source home automation that puts local control and privacy first.
+      digest: 6135b2c904913d799af314523d7d2194a3600cdec3a0c290f250dbbc4cbb5d41
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-1.0.1/home-assistant-1.0.1.tgz
+      version: 1.0.1
+    - apiVersion: v2
+      appVersion: 2023.11.2
+      created: "2023-11-13T22:02:18.43037266Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Open source home automation that puts local control and privacy first.
+      digest: 5ba5640b9b3299bb7889e1b12dd07d451c1ce14723bf70a8c0136c94d9bfa077
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-1.0.0/home-assistant-1.0.0.tgz
+      version: 1.0.0
+    - apiVersion: v2
+      appVersion: 2023.11.1
+      created: "2023-11-04T17:29:22.435860148Z"
+      description: Home assistant home automation kubernetes helm chart
+      digest: 754f47f4711a8fbf1114d08f71593f56cce5edb9c2df018c7adb7118cd2e47b6
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.17.0/home-assistant-0.17.0.tgz
+      version: 0.17.0
+    - apiVersion: v2
+      appVersion: 2023.9.1
+      created: "2023-09-11T12:20:23.518079269Z"
+      description: Home assistant home automation kubernetes helm chart
+      digest: 9e4fca68ea48478c4f9d7fdf4918193d8c4ee19afab1ddb8cf922a48a8399fce
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.12.0/home-assistant-0.12.0.tgz
+      version: 0.12.0
+    - apiVersion: v2
+      appVersion: 2023.6.3
+      created: "2023-06-24T08:32:35.03461245Z"
+      description: Home assistant home automation kubernetes helm chart
+      digest: 0826e563851579744a8812d1908cd27636331ef247f92b349671d05634601cf0
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.11.0/home-assistant-0.11.0.tgz
+      version: 0.11.0
+    - apiVersion: v2
+      appVersion: 2023.6.2
+      created: "2023-06-15T09:01:02.763569254Z"
+      description: Home assistant home automation kubernetes helm chart
+      digest: 091c1c531b7da36422fda2ff7434afef66805be2c3b1ec710cf95f86b333daf7
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.10.0/home-assistant-0.10.0.tgz
+      version: 0.10.0
+    - apiVersion: v2
+      appVersion: 2023.5.4
+      created: "2023-05-25T10:30:28.91939223Z"
+      description: Home assistant home automation kubernetes helm chart
+      digest: af8c3a67e3578112561110e5547bfc6099b58cbb9671a8f538222a2be2ee11ef
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.9.0/home-assistant-0.9.0.tgz
+      version: 0.9.0
+    - apiVersion: v2
+      appVersion: 2023.5.3
+      created: "2023-05-18T20:34:55.113105678Z"
+      description: Home assistant home automation kubernetes helm chart
+      digest: 4665aedb45f19b08162f62067cd766ce49cb4f81344561de9e481e161b8d92f8
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.8.0/home-assistant-0.8.0.tgz
+      version: 0.8.0
+    - apiVersion: v2
+      appVersion: 2023.5.2
+      created: "2023-05-06T11:54:23.709430424Z"
+      description: Home assistant home automation kubernetes helm chart
+      digest: 2fe5e861afb7ba6ae27acfefe549aba338852867579a8e05ca22bc153e3f348f
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.7.0/home-assistant-0.7.0.tgz
+      version: 0.7.0
+    - apiVersion: v2
+      appVersion: 2023.5.1
+      created: "2023-05-05T07:41:00.608235237Z"
+      description: Home assistant home automation kubernetes helm chart
+      digest: 4b0945d70399d6c4dd00c9af2cfb7021cd7b3865b9832bf796143ac497578619
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.6.0/home-assistant-0.6.0.tgz
+      version: 0.6.0
+    - apiVersion: v2
+      appVersion: 2023.5.0
+      created: "2023-05-04T18:35:25.642937842Z"
+      description: Home assistant home automation kubernetes helm chart
+      digest: 792dbc915ee44713cd0d61fdb09a9d8c8f331f420725fdee0001b770d5970438
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.5.0/home-assistant-0.5.0.tgz
+      version: 0.5.0
+    - apiVersion: v2
+      appVersion: 2023.4.6
+      created: "2023-04-22T14:41:49.899691698Z"
+      description: Home assistant home automation kubernetes helm chart
+      digest: 5b64e944b6fd797978b847034756f4d6445a985e2d14ffbfc2a59b14ebd79110
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.4.0/home-assistant-0.4.0.tgz
+      version: 0.4.0
+    - apiVersion: v2
+      appVersion: 2023.4.5
+      created: "2023-04-18T06:26:37.988768816Z"
+      description: Home assistant home automation kubernetes helm chart
+      digest: 14ebb0ed5fa612897ce980c36c7ea84225a14ba132f11efdd56423256e046c4b
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.3.0/home-assistant-0.3.0.tgz
+      version: 0.3.0
+    - apiVersion: v2
+      appVersion: 2023.4.4
+      created: "2023-04-13T19:59:42.30905782Z"
+      description: Home assistant home automation kubernetes helm chart
+      digest: 0058004235a1493fa9ecfac410c8d68207425408fd4ce6611f644f6fbb474092
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.2.0/home-assistant-0.2.0.tgz
+      version: 0.2.0
+    - apiVersion: v2
+      appVersion: 2023.3.0
+      created: "2023-04-11T15:56:35.68277424Z"
+      description: Home assistant home automation kubernetes helm chart
+      digest: 13f2328526d1f2f8efb2aca7b6c9e90febed30bbcd6e1fe7f87751273b44d5aa
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.1.1/home-assistant-0.1.1.tgz
+      version: 0.1.1
+    - apiVersion: v2
+      appVersion: 2023.3.0
+      created: "2023-03-18T14:31:56.547808838Z"
+      description: Home assistant home automation kubernetes helm chart
+      digest: 0e231a1be236da56a69e92c889814718074fe43a1b40731ee80a47448377c592
+      name: home-assistant
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/home-assistant-0.1.0/home-assistant-0.1.0.tgz
+      version: 0.1.0
   omada-controller:
-  - apiVersion: v2
-    appVersion: 5.9.31
-    created: "2023-07-02T20:53:39.096452909Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Omada software controller Helm Chart
-    digest: f1ace231a426598f7a4666f68adadad4b57d66151672afe7e399b8f6b45c2290
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: omada-controller
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/omada-controller-2.0.2/omada-controller-2.0.2.tgz
-    version: 2.0.2
-  - apiVersion: v2
-    appVersion: 5.9.31
-    created: "2023-07-02T20:21:43.095249746Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Omada software controller Helm Chart
-    digest: 7819f4d8ddc9f7809001f0560ef9f7c0a5d8b5c6ce3c9a0070bf2692197147dc
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: omada-controller
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/omada-controller-2.0.1/omada-controller-2.0.1.tgz
-    version: 2.0.1
-  - apiVersion: v2
-    appVersion: 5.9.31
-    created: "2023-07-02T19:27:25.068322111Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Omada software controller Helm Chart
-    digest: 6edf10894e78c4c773c266b9650d008297051b655148d15d207e1b664a5d5de9
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: omada-controller
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/omada-controller-2.0.0/omada-controller-2.0.0.tgz
-    version: 2.0.0
-  - apiVersion: v2
-    appVersion: 5.9.31
-    created: "2023-07-02T16:46:48.803937734Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Omada software controller Helm Chart
-    digest: ab772a3b7c2d3b70b73714a4c7ba87f31f1b4aeca8997582b7dd35d7cd341e3e
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: omada-controller
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.2.6/omada-controller-1.2.6.tgz
-    version: 1.2.6
-  - apiVersion: v2
-    appVersion: 5.9.31
-    created: "2023-07-02T12:45:37.203928177Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Omada software controller Helm Chart
-    digest: f931915cff2d2452fa458669cea7763c55b42a4e2bc0a5c0bd3cb37ac0295190
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: omada-controller
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.2.5/omada-controller-1.2.5.tgz
-    version: 1.2.5
-  - apiVersion: v2
-    appVersion: 5.9.31
-    created: "2023-07-02T12:29:14.302772986Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Omada software controller Helm Chart
-    digest: 7fe2fd84e4c043bb0b2dca290b3afa3628a85a50d1170ef04910d31052c26a1b
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: omada-controller
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.2.4/omada-controller-1.2.4.tgz
-    version: 1.2.4
-  - apiVersion: v2
-    appVersion: 5.9.31
-    created: "2023-07-02T12:11:53.222760327Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Omada software controller Helm Chart
-    digest: 0a148db7b2cc3708e53ce493f0636390535d34424891d58f54ac328d724fcf44
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: omada-controller
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.2.3/omada-controller-1.2.3.tgz
-    version: 1.2.3
-  - apiVersion: v2
-    appVersion: 5.9.31
-    created: "2023-07-02T11:47:58.321378009Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Omada software controller Helm Chart
-    digest: 4449fdebdc78b596d05c18eb8a75b72f7ef9ca7c7209c05dfd8ad265d3163a44
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: omada-controller
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.2.2/omada-controller-1.2.2.tgz
-    version: 1.2.2
-  - apiVersion: v2
-    appVersion: 5.9.31
-    created: "2023-06-29T20:54:42.632605703Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Omada software controller Helm Chart
-    digest: 7a00b073246bb88f5b07e317acbc691276b2a20a6432e39973770b83f3dff80c
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: omada-controller
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.2.1/omada-controller-1.2.1.tgz
-    version: 1.2.1
-  - apiVersion: v2
-    appVersion: 5.9.31
-    created: "2023-05-04T18:31:31.780336908Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Omada software controller Helm Chart
-    digest: 092db8a3a4f4ff71e6f934ffe918eebf9e418aa5926541045c06a079f86c4a89
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: omada-controller
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.2.0/omada-controller-1.2.0.tgz
-    version: 1.2.0
-  - apiVersion: v2
-    appVersion: 5.9.31
-    created: "2023-05-03T20:55:19.950424416Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Omada software controller Helm Chart
-    digest: d6f8578be5e40ae6fa559b50e10f8ef40c242d133715c3a6122424578f5c4fda
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: omada-controller
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.1.0/omada-controller-1.1.0.tgz
-    version: 1.1.0
-  - apiVersion: v2
-    appVersion: 5.9.31
-    created: "2023-05-03T20:38:11.183597316Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Omada software controller Helm Chart
-    digest: ebff6a299ce6a36ed5aff6cfc338e2056ac6fa3078c5d52fa99cb1643f31d115
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: omada-controller
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.0.0/omada-controller-1.0.0.tgz
-    version: 1.0.0
+    - apiVersion: v2
+      appVersion: 5.9.31
+      created: "2023-07-02T20:53:39.096452909Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Omada software controller Helm Chart
+      digest: f1ace231a426598f7a4666f68adadad4b57d66151672afe7e399b8f6b45c2290
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: omada-controller
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/omada-controller-2.0.2/omada-controller-2.0.2.tgz
+      version: 2.0.2
+    - apiVersion: v2
+      appVersion: 5.9.31
+      created: "2023-07-02T20:21:43.095249746Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Omada software controller Helm Chart
+      digest: 7819f4d8ddc9f7809001f0560ef9f7c0a5d8b5c6ce3c9a0070bf2692197147dc
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: omada-controller
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/omada-controller-2.0.1/omada-controller-2.0.1.tgz
+      version: 2.0.1
+    - apiVersion: v2
+      appVersion: 5.9.31
+      created: "2023-07-02T19:27:25.068322111Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Omada software controller Helm Chart
+      digest: 6edf10894e78c4c773c266b9650d008297051b655148d15d207e1b664a5d5de9
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: omada-controller
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/omada-controller-2.0.0/omada-controller-2.0.0.tgz
+      version: 2.0.0
+    - apiVersion: v2
+      appVersion: 5.9.31
+      created: "2023-07-02T16:46:48.803937734Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Omada software controller Helm Chart
+      digest: ab772a3b7c2d3b70b73714a4c7ba87f31f1b4aeca8997582b7dd35d7cd341e3e
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: omada-controller
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.2.6/omada-controller-1.2.6.tgz
+      version: 1.2.6
+    - apiVersion: v2
+      appVersion: 5.9.31
+      created: "2023-07-02T12:45:37.203928177Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Omada software controller Helm Chart
+      digest: f931915cff2d2452fa458669cea7763c55b42a4e2bc0a5c0bd3cb37ac0295190
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: omada-controller
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.2.5/omada-controller-1.2.5.tgz
+      version: 1.2.5
+    - apiVersion: v2
+      appVersion: 5.9.31
+      created: "2023-07-02T12:29:14.302772986Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Omada software controller Helm Chart
+      digest: 7fe2fd84e4c043bb0b2dca290b3afa3628a85a50d1170ef04910d31052c26a1b
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: omada-controller
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.2.4/omada-controller-1.2.4.tgz
+      version: 1.2.4
+    - apiVersion: v2
+      appVersion: 5.9.31
+      created: "2023-07-02T12:11:53.222760327Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Omada software controller Helm Chart
+      digest: 0a148db7b2cc3708e53ce493f0636390535d34424891d58f54ac328d724fcf44
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: omada-controller
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.2.3/omada-controller-1.2.3.tgz
+      version: 1.2.3
+    - apiVersion: v2
+      appVersion: 5.9.31
+      created: "2023-07-02T11:47:58.321378009Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Omada software controller Helm Chart
+      digest: 4449fdebdc78b596d05c18eb8a75b72f7ef9ca7c7209c05dfd8ad265d3163a44
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: omada-controller
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.2.2/omada-controller-1.2.2.tgz
+      version: 1.2.2
+    - apiVersion: v2
+      appVersion: 5.9.31
+      created: "2023-06-29T20:54:42.632605703Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Omada software controller Helm Chart
+      digest: 7a00b073246bb88f5b07e317acbc691276b2a20a6432e39973770b83f3dff80c
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: omada-controller
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.2.1/omada-controller-1.2.1.tgz
+      version: 1.2.1
+    - apiVersion: v2
+      appVersion: 5.9.31
+      created: "2023-05-04T18:31:31.780336908Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Omada software controller Helm Chart
+      digest: 092db8a3a4f4ff71e6f934ffe918eebf9e418aa5926541045c06a079f86c4a89
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: omada-controller
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.2.0/omada-controller-1.2.0.tgz
+      version: 1.2.0
+    - apiVersion: v2
+      appVersion: 5.9.31
+      created: "2023-05-03T20:55:19.950424416Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Omada software controller Helm Chart
+      digest: d6f8578be5e40ae6fa559b50e10f8ef40c242d133715c3a6122424578f5c4fda
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: omada-controller
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.1.0/omada-controller-1.1.0.tgz
+      version: 1.1.0
+    - apiVersion: v2
+      appVersion: 5.9.31
+      created: "2023-05-03T20:38:11.183597316Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Omada software controller Helm Chart
+      digest: ebff6a299ce6a36ed5aff6cfc338e2056ac6fa3078c5d52fa99cb1643f31d115
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: omada-controller
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/omada-controller-1.0.0/omada-controller-1.0.0.tgz
+      version: 1.0.0
   proxmox-exporter:
-  - apiVersion: v2
-    appVersion: 3.4.2
-    created: "2026-02-10T20:45:48.522240051Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: 59870d9d2645299733124b80afbcbb2284c190f3f5ca4adde8523f81bfd49230
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.10.0/proxmox-exporter-1.10.0.tgz
-    version: 1.10.0
-  - apiVersion: v2
-    appVersion: 3.2.2
-    created: "2024-03-01T16:18:35.052388024Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: 65911e1ee2aea0082e0e38b4c531b760bcb8a6ef418fddafb66be86851d6592f
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.9.0/proxmox-exporter-1.9.0.tgz
-    version: 1.9.0
-  - apiVersion: v2
-    appVersion: 3.2.1
-    created: "2024-01-30T12:16:55.650249424Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: 1976dcc7508fd1794338deeca089be85e451010da63ee66c225286540c608536
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.8.0/proxmox-exporter-1.8.0.tgz
-    version: 1.8.0
-  - apiVersion: v2
-    appVersion: 3.0.2
-    created: "2023-11-05T17:11:19.208138587Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: db71de541020f4549f4ce808022548cc9c9f5652d4e72078e317c370a74a10e9
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.7.0/proxmox-exporter-1.7.0.tgz
-    version: 1.7.0
-  - apiVersion: v2
-    appVersion: 3.0.0
-    created: "2023-11-05T15:15:10.632391153Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: 4d63311ee67ceadbdaaaa7c5b5398cddbe47f3defe5210eb5b83b1064c0b73c8
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.6.0/proxmox-exporter-1.6.0.tgz
-    version: 1.6.0
-  - apiVersion: v2
-    appVersion: 2.3.1
-    created: "2023-08-18T18:35:28.117511499Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: ad6c8e354d9725bbc149e0a32aa2ac8846a60117dbe1e1e850afb5e64c9b428c
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.5.0/proxmox-exporter-1.5.0.tgz
-    version: 1.5.0
-  - apiVersion: v2
-    appVersion: 2.3.0
-    created: "2023-04-26T12:59:57.396543613Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: 0637df3f9737572515938e80d8b02e47684f17d0d7b117e3e6023ce2fe15491b
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.4.0/proxmox-exporter-1.4.0.tgz
-    version: 1.4.0
-  - apiVersion: v2
-    appVersion: 2.2.4
-    created: "2023-04-11T16:51:53.670572595Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: 3f7fff13a9a7a9cbec8f2269a0c2dbe4ac57926fe4fa0373c1fb1b91a93b64af
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.3.6/proxmox-exporter-1.3.6.tgz
-    version: 1.3.6
-  - apiVersion: v2
-    appVersion: 2.2.4
-    created: "2023-04-11T15:56:35.899546169Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: fa73330f4f51e121716fbd6907f3455681efd115d50e31bdba298a811a25def6
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.3.5/proxmox-exporter-1.3.5.tgz
-    version: 1.3.5
-  - apiVersion: v2
-    appVersion: 2.2.4
-    created: "2023-04-08T19:43:53.253227279Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: 3c4542299fa7d4b6bdcf71edea1f461012f3a5ac0bd7fd5b06bdc3223fbf3cbc
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.3.4/proxmox-exporter-1.3.4.tgz
-    version: 1.3.4
-  - apiVersion: v2
-    appVersion: 2.2.4
-    created: "2023-04-08T19:22:36.050070037Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: 7afe0a59220574a12f86909f4211337cc429b7f752527b63e1178ad54baa4941
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.3.3/proxmox-exporter-1.3.3.tgz
-    version: 1.3.3
-  - apiVersion: v2
-    appVersion: 2.2.4
-    created: "2023-04-04T15:30:52.998293453Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: 0612c488d05d87aeffd800890094f75f2fed7056da7d325a749ae45da1fbe468
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.3.2/proxmox-exporter-1.3.2.tgz
-    version: 1.3.2
-  - apiVersion: v2
-    appVersion: 2.2.4
-    created: "2023-03-27T21:29:03.488620899Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: 58733dd5c0956a508b44d595f0b960f7816dc2cd9779491c2e013d012f480d94
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.3.0/proxmox-exporter-1.3.0.tgz
-    version: 1.3.0
-  - apiVersion: v2
-    appVersion: 2.2.4
-    created: "2023-03-26T13:40:20.484601188Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: ca05e13e6b74cb00b5ac94050ac4a57b43b6fefd1244f7dbd23929137098c2cc
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.2.2/proxmox-exporter-1.2.2.tgz
-    version: 1.2.2
-  - apiVersion: v2
-    appVersion: 2.2.4
-    created: "2023-03-26T13:17:50.414401621Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: a4aba65638f2d2b65bedff5af4fffcf2186abc3c76d0af736f4eaf799b2ceb9d
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.2.1/proxmox-exporter-1.2.1.tgz
-    version: 1.2.1
-  - apiVersion: v2
-    appVersion: 2.2.4
-    created: "2023-03-26T13:12:16.323674551Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: 6df7553d6f2107d6221955d32d6707e7a93cafc78b71ade0030bd4f219d5851a
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.2.0/proxmox-exporter-1.2.0.tgz
-    version: 1.2.0
-  - apiVersion: v2
-    appVersion: 2.2.4
-    created: "2023-03-26T12:15:19.945638391Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: afc385ee7cdbd0b9eb8cde269a9a97f6c09bc61d9e0abce45bf997f045a53a4a
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.1.0/proxmox-exporter-1.1.0.tgz
-    version: 1.1.0
-  - apiVersion: v2
-    appVersion: 2.2.4
-    created: "2023-03-26T11:35:15.006447928Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Proxmox exporter Helm Chart
-    digest: be53ca6627f4cb6298829d4fd0f95c5cc8595b3fd0761749463f692a6a4479ad
-    name: proxmox-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.0.0/proxmox-exporter-1.0.0.tgz
-    version: 1.0.0
+    - apiVersion: v2
+      appVersion: 3.4.2
+      created: "2026-02-10T20:45:48.522240051Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: 59870d9d2645299733124b80afbcbb2284c190f3f5ca4adde8523f81bfd49230
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.10.0/proxmox-exporter-1.10.0.tgz
+      version: 1.10.0
+    - apiVersion: v2
+      appVersion: 3.2.2
+      created: "2024-03-01T16:18:35.052388024Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: 65911e1ee2aea0082e0e38b4c531b760bcb8a6ef418fddafb66be86851d6592f
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.9.0/proxmox-exporter-1.9.0.tgz
+      version: 1.9.0
+    - apiVersion: v2
+      appVersion: 3.2.1
+      created: "2024-01-30T12:16:55.650249424Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: 1976dcc7508fd1794338deeca089be85e451010da63ee66c225286540c608536
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.8.0/proxmox-exporter-1.8.0.tgz
+      version: 1.8.0
+    - apiVersion: v2
+      appVersion: 3.0.2
+      created: "2023-11-05T17:11:19.208138587Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: db71de541020f4549f4ce808022548cc9c9f5652d4e72078e317c370a74a10e9
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.7.0/proxmox-exporter-1.7.0.tgz
+      version: 1.7.0
+    - apiVersion: v2
+      appVersion: 3.0.0
+      created: "2023-11-05T15:15:10.632391153Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: 4d63311ee67ceadbdaaaa7c5b5398cddbe47f3defe5210eb5b83b1064c0b73c8
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.6.0/proxmox-exporter-1.6.0.tgz
+      version: 1.6.0
+    - apiVersion: v2
+      appVersion: 2.3.1
+      created: "2023-08-18T18:35:28.117511499Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: ad6c8e354d9725bbc149e0a32aa2ac8846a60117dbe1e1e850afb5e64c9b428c
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.5.0/proxmox-exporter-1.5.0.tgz
+      version: 1.5.0
+    - apiVersion: v2
+      appVersion: 2.3.0
+      created: "2023-04-26T12:59:57.396543613Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: 0637df3f9737572515938e80d8b02e47684f17d0d7b117e3e6023ce2fe15491b
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.4.0/proxmox-exporter-1.4.0.tgz
+      version: 1.4.0
+    - apiVersion: v2
+      appVersion: 2.2.4
+      created: "2023-04-11T16:51:53.670572595Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: 3f7fff13a9a7a9cbec8f2269a0c2dbe4ac57926fe4fa0373c1fb1b91a93b64af
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.3.6/proxmox-exporter-1.3.6.tgz
+      version: 1.3.6
+    - apiVersion: v2
+      appVersion: 2.2.4
+      created: "2023-04-11T15:56:35.899546169Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: fa73330f4f51e121716fbd6907f3455681efd115d50e31bdba298a811a25def6
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.3.5/proxmox-exporter-1.3.5.tgz
+      version: 1.3.5
+    - apiVersion: v2
+      appVersion: 2.2.4
+      created: "2023-04-08T19:43:53.253227279Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: 3c4542299fa7d4b6bdcf71edea1f461012f3a5ac0bd7fd5b06bdc3223fbf3cbc
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.3.4/proxmox-exporter-1.3.4.tgz
+      version: 1.3.4
+    - apiVersion: v2
+      appVersion: 2.2.4
+      created: "2023-04-08T19:22:36.050070037Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: 7afe0a59220574a12f86909f4211337cc429b7f752527b63e1178ad54baa4941
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.3.3/proxmox-exporter-1.3.3.tgz
+      version: 1.3.3
+    - apiVersion: v2
+      appVersion: 2.2.4
+      created: "2023-04-04T15:30:52.998293453Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: 0612c488d05d87aeffd800890094f75f2fed7056da7d325a749ae45da1fbe468
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.3.2/proxmox-exporter-1.3.2.tgz
+      version: 1.3.2
+    - apiVersion: v2
+      appVersion: 2.2.4
+      created: "2023-03-27T21:29:03.488620899Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: 58733dd5c0956a508b44d595f0b960f7816dc2cd9779491c2e013d012f480d94
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.3.0/proxmox-exporter-1.3.0.tgz
+      version: 1.3.0
+    - apiVersion: v2
+      appVersion: 2.2.4
+      created: "2023-03-26T13:40:20.484601188Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: ca05e13e6b74cb00b5ac94050ac4a57b43b6fefd1244f7dbd23929137098c2cc
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.2.2/proxmox-exporter-1.2.2.tgz
+      version: 1.2.2
+    - apiVersion: v2
+      appVersion: 2.2.4
+      created: "2023-03-26T13:17:50.414401621Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: a4aba65638f2d2b65bedff5af4fffcf2186abc3c76d0af736f4eaf799b2ceb9d
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.2.1/proxmox-exporter-1.2.1.tgz
+      version: 1.2.1
+    - apiVersion: v2
+      appVersion: 2.2.4
+      created: "2023-03-26T13:12:16.323674551Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: 6df7553d6f2107d6221955d32d6707e7a93cafc78b71ade0030bd4f219d5851a
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.2.0/proxmox-exporter-1.2.0.tgz
+      version: 1.2.0
+    - apiVersion: v2
+      appVersion: 2.2.4
+      created: "2023-03-26T12:15:19.945638391Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: afc385ee7cdbd0b9eb8cde269a9a97f6c09bc61d9e0abce45bf997f045a53a4a
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.1.0/proxmox-exporter-1.1.0.tgz
+      version: 1.1.0
+    - apiVersion: v2
+      appVersion: 2.2.4
+      created: "2023-03-26T11:35:15.006447928Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Proxmox exporter Helm Chart
+      digest: be53ca6627f4cb6298829d4fd0f95c5cc8595b3fd0761749463f692a6a4479ad
+      name: proxmox-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/proxmox-exporter-1.0.0/proxmox-exporter-1.0.0.tgz
+      version: 1.0.0
   speedtest-exporter:
-  - apiVersion: v2
-    appVersion: 0.0.5
-    created: "2023-11-24T22:44:15.376169538Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Speedtest exporter Helm Chart
-    digest: 61b7c71bbbbd07e3284044d9bffa1e4cf7940070c81a5fe76a86e0a2fe554270
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: speedtest-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.6/speedtest-exporter-1.0.6.tgz
-    version: 1.0.6
-  - apiVersion: v2
-    appVersion: 0.0.5
-    created: "2023-04-11T16:51:53.814208527Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Speedtest exporter Helm Chart
-    digest: 0bbab680518063a5a624c89e93026d14e66f2eb88b19c395c1a0079d842f5bea
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: speedtest-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.5/speedtest-exporter-1.0.5.tgz
-    version: 1.0.5
-  - apiVersion: v2
-    appVersion: 0.0.5
-    created: "2023-04-11T15:56:36.106401831Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Speedtest exporter Helm Chart
-    digest: 7bc13c8fe920d031667966fc2bf99cae61b33752abe9d5cff9ed961a8a3be93b
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: speedtest-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.4/speedtest-exporter-1.0.4.tgz
-    version: 1.0.4
-  - apiVersion: v2
-    appVersion: 0.0.5
-    created: "2023-04-08T19:22:36.1748448Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Speedtest exporter Helm Chart
-    digest: 8310139431aca5882d11ddf9efeb3450090ad6f0ec0a9c174a1af45f8b1282ba
-    name: speedtest-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.3/speedtest-exporter-1.0.3.tgz
-    version: 1.0.3
-  - apiVersion: v2
-    appVersion: 0.0.5
-    created: "2023-04-04T15:30:53.14168255Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Speedtest exporter Helm Chart
-    digest: 53459b128cc63820a069bd0f39ea96c409882e11d691d818797c6f7b0d00d248
-    name: speedtest-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.2/speedtest-exporter-1.0.2.tgz
-    version: 1.0.2
-  - apiVersion: v2
-    appVersion: 0.0.5
-    created: "2023-04-03T22:39:20.545498608Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Speedtest exporter Helm Chart
-    digest: 955b48f283e4a38143380ea16120864b8713fe1aef5af836418b3ad6c653c254
-    name: speedtest-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.1/speedtest-exporter-1.0.1.tgz
-    version: 1.0.1
-  - apiVersion: v2
-    appVersion: 0.0.5
-    created: "2023-03-28T20:43:38.394310151Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Prometheus Speedtest exporter Helm Chart
-    digest: c9a3064eab73d3c8f3d60e3ee3542f083c4b0ed57839d34971489c4bdecaa207
-    name: speedtest-exporter
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.0/speedtest-exporter-1.0.0.tgz
-    version: 1.0.0
+    - apiVersion: v2
+      appVersion: 0.0.5
+      created: "2023-11-24T22:44:15.376169538Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Speedtest exporter Helm Chart
+      digest: 61b7c71bbbbd07e3284044d9bffa1e4cf7940070c81a5fe76a86e0a2fe554270
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: speedtest-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.6/speedtest-exporter-1.0.6.tgz
+      version: 1.0.6
+    - apiVersion: v2
+      appVersion: 0.0.5
+      created: "2023-04-11T16:51:53.814208527Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Speedtest exporter Helm Chart
+      digest: 0bbab680518063a5a624c89e93026d14e66f2eb88b19c395c1a0079d842f5bea
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: speedtest-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.5/speedtest-exporter-1.0.5.tgz
+      version: 1.0.5
+    - apiVersion: v2
+      appVersion: 0.0.5
+      created: "2023-04-11T15:56:36.106401831Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Speedtest exporter Helm Chart
+      digest: 7bc13c8fe920d031667966fc2bf99cae61b33752abe9d5cff9ed961a8a3be93b
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: speedtest-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.4/speedtest-exporter-1.0.4.tgz
+      version: 1.0.4
+    - apiVersion: v2
+      appVersion: 0.0.5
+      created: "2023-04-08T19:22:36.1748448Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Speedtest exporter Helm Chart
+      digest: 8310139431aca5882d11ddf9efeb3450090ad6f0ec0a9c174a1af45f8b1282ba
+      name: speedtest-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.3/speedtest-exporter-1.0.3.tgz
+      version: 1.0.3
+    - apiVersion: v2
+      appVersion: 0.0.5
+      created: "2023-04-04T15:30:53.14168255Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Speedtest exporter Helm Chart
+      digest: 53459b128cc63820a069bd0f39ea96c409882e11d691d818797c6f7b0d00d248
+      name: speedtest-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.2/speedtest-exporter-1.0.2.tgz
+      version: 1.0.2
+    - apiVersion: v2
+      appVersion: 0.0.5
+      created: "2023-04-03T22:39:20.545498608Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Speedtest exporter Helm Chart
+      digest: 955b48f283e4a38143380ea16120864b8713fe1aef5af836418b3ad6c653c254
+      name: speedtest-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.1/speedtest-exporter-1.0.1.tgz
+      version: 1.0.1
+    - apiVersion: v2
+      appVersion: 0.0.5
+      created: "2023-03-28T20:43:38.394310151Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Prometheus Speedtest exporter Helm Chart
+      digest: c9a3064eab73d3c8f3d60e3ee3542f083c4b0ed57839d34971489c4bdecaa207
+      name: speedtest-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/speedtest-exporter-1.0.0/speedtest-exporter-1.0.0.tgz
+      version: 1.0.0
   transmission:
-  - apiVersion: v2
-    created: "2023-11-28T19:36:25.026402307Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Transmission bittorrent client Helm Chart
-    digest: cda08eb22905df5d1e7026d5728bd1b2373bf830ccee8a157539079cb6423db3
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: transmission
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/transmission-1.7.0/transmission-1.7.0.tgz
-    version: 1.7.0
-  - apiVersion: v2
-    created: "2023-11-08T11:29:09.870643014Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Transmission bittorrent client Helm Chart
-    digest: d8fc634c04fe843e13754a506162fa392f303d5ab0df92706dca0c8fedc5b3cd
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: transmission
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/transmission-1.6.0/transmission-1.6.0.tgz
-    version: 1.6.0
-  - apiVersion: v2
-    appVersion: 4.0.4
-    created: "2023-08-30T08:13:38.460728931Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Transmission bittorrent client Helm Chart
-    digest: 221c4eea89b6491321a4e0a46367910b9340ab2f47a747e004d85bc36db8f114
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: transmission
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/transmission-1.2.0/transmission-1.2.0.tgz
-    version: 1.2.0
-  - apiVersion: v2
-    appVersion: 4.0.3
-    created: "2023-04-15T07:01:59.579623619Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Transmission bittorrent client Helm Chart
-    digest: b23de3019119ace1ebd8f72280c7bf8ac855fcbc23168dd0e46490a01ee7fd0c
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: transmission
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/transmission-1.1.0/transmission-1.1.0.tgz
-    version: 1.1.0
-  - apiVersion: v2
-    appVersion: 4.0.2
-    created: "2023-04-11T16:51:53.951021Z"
-    dependencies:
-    - name: base
-      repository: https://charts.damoun.dev
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Transmission bittorrent client Helm Chart
-    digest: 6c5462a6aeb077bc9b5a5dacdd4ba5d86d9c1c12dd0889d69f72b1581f2738ae
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: transmission
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/transmission-1.0.10/transmission-1.0.10.tgz
-    version: 1.0.10
-  - apiVersion: v2
-    appVersion: 4.0.2
-    created: "2023-04-11T15:56:36.32797944Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Transmission bittorrent client Helm Chart
-    digest: dbd6df3c9320f7c1e71b5c0a5abe601e30da791170f4f260835552f240c1bf5b
-    maintainers:
-    - email: damien@plenard.me
-      name: damoun
-      url: https://github.com/damoun
-    name: transmission
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/transmission-1.0.9/transmission-1.0.9.tgz
-    version: 1.0.9
-  - apiVersion: v2
-    appVersion: 4.0.2
-    created: "2023-04-04T15:30:53.266897942Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Transmission bittorrent client Helm Chart
-    digest: 6217bdc64762f570c1a8cce2dad9eaecc8accaf0ab1e56767297150a067094b0
-    name: transmission
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/transmission-1.0.8/transmission-1.0.8.tgz
-    version: 1.0.8
-  - apiVersion: v2
-    appVersion: 4.0.2
-    created: "2023-03-19T23:32:07.313260283Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Transmission bittorrent client Helm Chart
-    digest: 9b23b4685dffcec7b770f3d5ec0fc6be0c4bc830d12c33d978ecb81758cf93f8
-    name: transmission
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/transmission-1.0.6/transmission-1.0.6.tgz
-    version: 1.0.6
-  - apiVersion: v2
-    appVersion: 4.0.2
-    created: "2023-03-19T23:27:51.305906574Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Transmission bittorrent client Helm Chart
-    digest: f1a120199f0df056889a7242e42fa0da2aed1868e32cd98ca305bc78d66181c6
-    name: transmission
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/transmission-1.0.5/transmission-1.0.5.tgz
-    version: 1.0.5
-  - apiVersion: v2
-    appVersion: 4.0.2
-    created: "2023-03-19T22:38:45.128870957Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Transmission bittorrent client Helm Chart
-    digest: b6d22d1f5a084fe26a1d2bd4fdebaa7c314751c408389442552cde179ad470e7
-    name: transmission
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/transmission-1.0.2/transmission-1.0.2.tgz
-    version: 1.0.2
-  - apiVersion: v2
-    appVersion: 4.0.2
-    created: "2023-03-19T22:27:08.058919816Z"
-    dependencies:
-    - name: base
-      repository: https://damoun.github.io/helm-charts
-      tags:
-      - damoun-base
-      version: 1.x.x
-    description: Transmission bittorrent client Helm Chart
-    digest: 5aa469468c22e3152cb849a8778f66b92aa15a9c907fb1d9a199429006bbc784
-    name: transmission
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/transmission-1.0.1/transmission-1.0.1.tgz
-    version: 1.0.1
-  - apiVersion: v2
-    appVersion: 4.0.2
-    created: "2023-03-18T14:18:38.559887277Z"
-    description: Transmission bittorrent client kubernetes helm chart
-    digest: bc10dc43559633d6985ea14d3ee9c1f769c75d205a622beac662330f5cb0e788
-    name: transmission
-    type: application
-    urls:
-    - https://github.com/damoun/helm-charts/releases/download/transmission-0.1.0/transmission-0.1.0.tgz
-    version: 0.1.0
+    - apiVersion: v2
+      created: "2023-11-28T19:36:25.026402307Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Transmission bittorrent client Helm Chart
+      digest: cda08eb22905df5d1e7026d5728bd1b2373bf830ccee8a157539079cb6423db3
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: transmission
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/transmission-1.7.0/transmission-1.7.0.tgz
+      version: 1.7.0
+    - apiVersion: v2
+      created: "2023-11-08T11:29:09.870643014Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Transmission bittorrent client Helm Chart
+      digest: d8fc634c04fe843e13754a506162fa392f303d5ab0df92706dca0c8fedc5b3cd
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: transmission
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/transmission-1.6.0/transmission-1.6.0.tgz
+      version: 1.6.0
+    - apiVersion: v2
+      appVersion: 4.0.4
+      created: "2023-08-30T08:13:38.460728931Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Transmission bittorrent client Helm Chart
+      digest: 221c4eea89b6491321a4e0a46367910b9340ab2f47a747e004d85bc36db8f114
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: transmission
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/transmission-1.2.0/transmission-1.2.0.tgz
+      version: 1.2.0
+    - apiVersion: v2
+      appVersion: 4.0.3
+      created: "2023-04-15T07:01:59.579623619Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Transmission bittorrent client Helm Chart
+      digest: b23de3019119ace1ebd8f72280c7bf8ac855fcbc23168dd0e46490a01ee7fd0c
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: transmission
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/transmission-1.1.0/transmission-1.1.0.tgz
+      version: 1.1.0
+    - apiVersion: v2
+      appVersion: 4.0.2
+      created: "2023-04-11T16:51:53.951021Z"
+      dependencies:
+        - name: base
+          repository: https://charts.damoun.dev
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Transmission bittorrent client Helm Chart
+      digest: 6c5462a6aeb077bc9b5a5dacdd4ba5d86d9c1c12dd0889d69f72b1581f2738ae
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: transmission
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/transmission-1.0.10/transmission-1.0.10.tgz
+      version: 1.0.10
+    - apiVersion: v2
+      appVersion: 4.0.2
+      created: "2023-04-11T15:56:36.32797944Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Transmission bittorrent client Helm Chart
+      digest: dbd6df3c9320f7c1e71b5c0a5abe601e30da791170f4f260835552f240c1bf5b
+      maintainers:
+        - email: damien@plenard.me
+          name: damoun
+          url: https://github.com/damoun
+      name: transmission
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/transmission-1.0.9/transmission-1.0.9.tgz
+      version: 1.0.9
+    - apiVersion: v2
+      appVersion: 4.0.2
+      created: "2023-04-04T15:30:53.266897942Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Transmission bittorrent client Helm Chart
+      digest: 6217bdc64762f570c1a8cce2dad9eaecc8accaf0ab1e56767297150a067094b0
+      name: transmission
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/transmission-1.0.8/transmission-1.0.8.tgz
+      version: 1.0.8
+    - apiVersion: v2
+      appVersion: 4.0.2
+      created: "2023-03-19T23:32:07.313260283Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Transmission bittorrent client Helm Chart
+      digest: 9b23b4685dffcec7b770f3d5ec0fc6be0c4bc830d12c33d978ecb81758cf93f8
+      name: transmission
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/transmission-1.0.6/transmission-1.0.6.tgz
+      version: 1.0.6
+    - apiVersion: v2
+      appVersion: 4.0.2
+      created: "2023-03-19T23:27:51.305906574Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Transmission bittorrent client Helm Chart
+      digest: f1a120199f0df056889a7242e42fa0da2aed1868e32cd98ca305bc78d66181c6
+      name: transmission
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/transmission-1.0.5/transmission-1.0.5.tgz
+      version: 1.0.5
+    - apiVersion: v2
+      appVersion: 4.0.2
+      created: "2023-03-19T22:38:45.128870957Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Transmission bittorrent client Helm Chart
+      digest: b6d22d1f5a084fe26a1d2bd4fdebaa7c314751c408389442552cde179ad470e7
+      name: transmission
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/transmission-1.0.2/transmission-1.0.2.tgz
+      version: 1.0.2
+    - apiVersion: v2
+      appVersion: 4.0.2
+      created: "2023-03-19T22:27:08.058919816Z"
+      dependencies:
+        - name: base
+          repository: https://damoun.github.io/helm-charts
+          tags:
+            - damoun-base
+          version: 1.x.x
+      description: Transmission bittorrent client Helm Chart
+      digest: 5aa469468c22e3152cb849a8778f66b92aa15a9c907fb1d9a199429006bbc784
+      name: transmission
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/transmission-1.0.1/transmission-1.0.1.tgz
+      version: 1.0.1
+    - apiVersion: v2
+      appVersion: 4.0.2
+      created: "2023-03-18T14:18:38.559887277Z"
+      description: Transmission bittorrent client kubernetes helm chart
+      digest: bc10dc43559633d6985ea14d3ee9c1f769c75d205a622beac662330f5cb0e788
+      name: transmission
+      type: application
+      urls:
+        - https://github.com/damoun/helm-charts/releases/download/transmission-0.1.0/transmission-0.1.0.tgz
+      version: 0.1.0
+  twitch-exporter:
+    - apiVersion: v2
+      appVersion: 1.1.7
+      created: "2026-11-10T21:54:51.228485515Z"
+      description: A Helm chart for twitch_exporter
+      digest: d7157732bec2a4bf5287f622eebcd202f31f3abe0d1d2804866abafddf678fae
+      name: twitch-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/twitch_exporter/releases/download/twitch-exporter-1.0.5/twitch-exporter-1.0.5.tgz
+      version: 1.0.5
+    - apiVersion: v2
+      appVersion: 1.1.6
+      created: "2026-11-10T21:20:51.748553386Z"
+      description: A Helm chart for twitch_exporter
+      digest: 08a1061e3fd00a93d27c16cbbcfda445ec5ab1cb90d6c44cd22c27fc8c4e5b76
+      name: twitch-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/twitch_exporter/releases/download/twitch-exporter-1.0.4/twitch-exporter-1.0.4.tgz
+      version: 1.0.4
+    - apiVersion: v2
+      appVersion: 1.1.5
+      created: "2026-11-10T20:59:33.298459889Z"
+      description: A Helm chart for twitch_exporter
+      digest: 4531a0ea1c356072beae19bbdd3dfdb99eb3e4bae55d4509913c9bbbc652867e
+      name: twitch-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/twitch_exporter/releases/download/twitch-exporter-1.0.3/twitch-exporter-1.0.3.tgz
+      version: 1.0.3
+    - apiVersion: v2
+      appVersion: 1.1.0
+      created: "2026-03-08T02:19:34.601870698Z"
+      description: A Helm chart for twitch_exporter
+      digest: c4be32454cddae0acc84693fc946d557add56de1a28993c24c991fabef560591
+      name: twitch-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/twitch_exporter/releases/download/twitch-exporter-1.0.2/twitch-exporter-1.0.2.tgz
+      version: 1.0.2
+    - apiVersion: v2
+      appVersion: 1.0.5
+      created: "2026-03-08T01:03:51.714250817Z"
+      description: A Helm chart for twitch_exporter
+      digest: 5d5488c1588415f949cbb4110973594a367e959452e32e84e1ac2d29da981efc
+      name: twitch-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/twitch_exporter/releases/download/twitch-exporter-1.0.1/twitch-exporter-1.0.1.tgz
+      version: 1.0.1
+    - apiVersion: v2
+      appVersion: 1.0.5
+      created: "2026-03-08T00:46:19.946542541Z"
+      description: A Helm chart for twitch_exporter
+      digest: c89c89ecfe28e82c61a5da6c447d7d2e6de6aa4df7f0dd585aaf8f55e74069ae
+      name: twitch-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/twitch_exporter/releases/download/twitch-exporter-1.0.0/twitch-exporter-1.0.0.tgz
+      version: 1.0.0
+    - apiVersion: v2
+      appVersion: 1.0.5
+      created: "2025-02-06T21:06:22.94322887Z"
+      description: A Helm chart for twitch_exporter
+      digest: 428d163b6dd81d89e1e044b22189e037e621ebc2b58da33541e1ffe17ce3b3e7
+      name: twitch-exporter
+      type: application
+      urls:
+        - https://github.com/damoun/twitch_exporter/releases/download/twitch-exporter-0.1.0/twitch-exporter-0.1.0.tgz
+      version: 0.1.0
 generated: "2026-11-11T08:56:46.80861635Z"
